@@ -49,8 +49,7 @@ footer {
 }
 
 .herotop {
-  background-image: url(../images/herotop_dark.jpg);
-  background-size: cover;
+  background-color: beige;
   height: 90vh;
 }
 .herotop h1 {
@@ -71,6 +70,7 @@ footer {
   background-color: #333333;
   width: auto;
   padding: 15px 20px;
+  border-radius: 5px;
 }
 .herotopMenu a {
   color: white;
@@ -100,7 +100,10 @@ h2 {
 }
 
 .information {
-  padding: 5% 10%;
+  padding: 5% 5%;
+  background-color: royalblue;
+  margin: 0% 10%;
+  border-radius: 5px;
 }
 .information p {
   color: #333333;
@@ -110,7 +113,7 @@ h2 {
   margin-bottom: 50px;
 }
 .information a {
-  background-color: #ff5050;
+  background-color: royalblue;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
