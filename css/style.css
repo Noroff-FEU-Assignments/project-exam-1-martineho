@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+}
+body {
+  margin: 0;
+}
+header,
+.herotop,
+section,
+footer {
+  padding: 0 10%;
+}
+
+.navLogo,
+.topNav {
+  margin-top: 5%;
+}
+
+.navLogo {
+  text-decoration: none;
+  color: #333333;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: block;
+  float: left;
+}
+
+.topNav {
+  display: block;
+  float: right;
+}
+.topNav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  margin-left: 40px;
+}
+#navButton {
+  background-color: #333333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.herotop {
+  background-image: url(../images/herotop_dark.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+.herotop h1 {
+  margin: 0;
+  padding-top: 20%;
+  font-size: 3.5rem;
+  font-weight: 500;
+  max-width: 800px;
+}
+.herotop p {
+  font-size: 1.5rem;
+}
+
+.herotopMenu {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -40px;
+  background-color: #333333;
+  width: auto;
+  padding: 15px 20px;
+}
+.herotopMenu a {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.herotopMenu a:hover {
+  background-color: #474747;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.latestPosts {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.postSlider {
+  margin-top: 50px;
+  height: 350px;
+  background-color: blue;
+}
+
+.information {
+  padding: 5% 10%;
+}
+.information p {
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+.information a {
+  background-color: #ff5050;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  gap: 15%;
+}
+footer h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6e6e6e;
+  padding-bottom: 4px;
+}
