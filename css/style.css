@@ -107,10 +107,17 @@ h2 span a {
   padding-bottom: 3%;
 }
 
-.postSlider {
+.slider {
   margin-top: 40px;
-  height: 350px;
   background-color: #2925ff;
+  display: flex;
+  gap: 20px;
+}
+.sliderPost {
+  background-color: #fa3651;
+  border-radius: 5px;
+  height: 350px;
+  width: 300px;
 }
 
 .information {
