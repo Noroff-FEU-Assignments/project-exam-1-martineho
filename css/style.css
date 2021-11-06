@@ -108,15 +108,16 @@ h2 span a {
 
 .slider {
   margin-top: 40px;
-  background-color: #6e6e6e;
-  display: flex;
-  gap: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
 }
-.sliderPost {
+.post {
   background-color: #602bf1;
   border-radius: 5px;
   height: 350px;
-  width: 300px;
+  width: 250px;
 }
 
 .information {
