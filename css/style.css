@@ -34,17 +34,17 @@ footer {
   float: right;
 }
 .topNav a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #333333;
   text-decoration: none;
   margin-left: 40px;
 }
 #navButton {
-  background-color: #e74a36;
+  background-color: #602bf1;
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 8px 20px;
+  border-radius: 50px;
   font-weight: 300;
 }
 
@@ -70,12 +70,12 @@ footer {
 .herotopMenu {
   position: absolute;
   margin-left: 10%;
-  margin-top: -40px;
-  background-color: #e74a36;
-  color: white;
+  margin-top: -30px;
+  background-color: #602bf1;
   width: auto;
-  padding: 15px 20px;
-  border-radius: 5px;
+  padding: 14px 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px #29292957;
 }
 .herotopMenu a {
   color: white;
@@ -85,7 +85,7 @@ footer {
   font-weight: 300;
 }
 .herotopMenu a:hover {
-  background-color: #474747;
+  background-color: #4a0cf3;
 }
 
 h2 {
@@ -99,7 +99,6 @@ h2 span a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
-  color: #e74a36;
 }
 
 .latestPosts {
@@ -109,12 +108,12 @@ h2 span a {
 
 .slider {
   margin-top: 40px;
-  background-color: #2925ff;
+  background-color: #6e6e6e;
   display: flex;
   gap: 20px;
 }
 .sliderPost {
-  background-color: #fa3651;
+  background-color: #602bf1;
   border-radius: 5px;
   height: 350px;
   width: 300px;
@@ -132,12 +131,12 @@ h2 span a {
   margin-bottom: 50px;
 }
 .information a {
-  background-color: #fa3651;
+  background-color: #602bf1;
   color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 8px 20px;
+  border-radius: 50px;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
