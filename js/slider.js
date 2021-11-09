@@ -1,5 +1,6 @@
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed";
-const postsContainer = document.querySelector(".latestPosts");
+const postsContainer = document.querySelector(".slider");
+const image = document.querySelector(".postImg");
 
 async function getPosts() {
 
@@ -20,15 +21,18 @@ async function getPosts() {
         }
   
         postsContainer.innerHTML +=
-          `<a class="post">
-                <div class="postImg"><img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> </div>
+          `<div class="slider">
+              <a class="post">
+                    <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                   <h4 class="postTitle">${posts[i].title.rendered}</h4>
-              </a>`;
+              </a>
+          </div>`;
       }
 
 }
 
 getPosts();
+
 
 // <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
 // <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
