@@ -3,13 +3,19 @@
 * {
   font-family: "Poppins", sans-serif;
   color: #222222;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
 }
+
 header,
 .herotop,
-section,
+.information,
 footer {
   padding: 0 10%;
 }
@@ -21,7 +27,7 @@ footer {
 
 .navLogo {
   text-decoration: none;
-  color: #222222;
+  color: white;
   font-family: Quicksand;
   font-weight: 600;
   font-size: 1.5rem;
@@ -34,33 +40,33 @@ footer {
   float: right;
 }
 .topNav a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  color: #222222;
+  color: white;
   text-decoration: none;
   margin-left: 40px;
 }
 #navButton {
-  background-color: #3257ff;
+  background-color: #ff4314;
   color: white;
   padding: 8px 20px;
-  border-radius: 50px;
-  font-weight: 300;
+  border-radius: 10px;
+  font-weight: 400;
 }
 
 .herotop {
-  background-color: rgb(122, 199, 154);
+  background-image: url(../images/herotop.jpg);
   background-size: cover;
   background-position: 50% 25%;
-  height: 70vh;
+  height: 100vh;
 }
 .herotop h1 {
   margin: 0;
   padding-top: 20%;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   font-weight: 500;
   max-width: 700px;
-  color: #222222;
+  color: white;
 }
 .herotop p {
   font-size: 1.5rem;
@@ -68,10 +74,11 @@ footer {
 }
 
 .herotopMenu {
+  display: none;
   position: absolute;
   margin-left: 10%;
   margin-top: -30px;
-  background-color: #3257ff;
+  background-color: #ee4d1c;
   width: auto;
   padding: 14px 25px;
   border-radius: 20px;
@@ -104,61 +111,90 @@ h2 span a {
 .latestPosts {
   padding-top: 5%;
   padding-bottom: 3%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.postTitle {
-  font-weight: 400;
+.latestPosts p button {
+  background-color: white;
+  font-size: 40px;
+  color: #222222;
+  cursor: pointer;
+  margin: 0 4px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.latestPosts p button:hover {
+  background-color: #dbeceb;
 }
 
 .slider {
-  display: inline-flex;
-  margin-top: 20px;
-  max-width: 800px;
-  position: relative;
-}
-.post {
-  background-color: rgb(247, 247, 247);
-  border-radius: 20px;
-  height: 350px;
-  width: 250px;
-  margin-right: 30px;
+  margin: 0 10%;
+  padding-bottom: 20px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 30px;
 }
 
-.post:hover {
-  background-color: #602bf1;
-  box-shadow: 0px 0px 15px #979797;
-}
-.postTitle {
-  padding: 0px 15px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.postImg {
-  width: 250px;
-  height: 250px;
-  border-radius: 20px 20px 0px 0px;
-}
-.categoryTag {
-  position: absolute;
-  background-color: #4815d4ce;
-  color: white;
-  padding: 5px 15px;
-  font-weight: 300;
-  font-size: 0.8rem;
-  border-radius: 50px;
+.slider .item {
+  border-radius: 20px;
+  height: 270px;
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0 5px 0px 0;
   text-decoration: none;
-  right: 10px;
+}
+
+.item .title {
+  padding: 10px 20px 20px 10px;
+}
+
+.item .title p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.slider .item img {
+  padding: 10px;
+  width: 260px;
+  height: 180px;
+  border-radius: 20px;
 }
 
 .information {
-  padding: 5% 10%;
-  border-radius: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.information .left {
+  background-color: #08a885;
+  border-radius: 20px;
+  padding: 60px 50px;
+  width: 64%;
+}
+.information .right {
+  background-color: #dbeceb;
+  border-radius: 20px;
+  padding: 30px 40px;
+  height: 155px;
 }
 .information p {
   color: #222222;
-  font-size: 1.4rem;
-  font-weight: 400;
-  max-width: 600px;
-  margin-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 400px;
+  margin-top: 20px;
 }
 .information a {
   background-color: #602bf1;
@@ -169,24 +205,72 @@ h2 span a {
   font-size: 1rem;
   text-decoration: none;
 }
+.information h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.newsletterInput {
+  border: none;
+  border-radius: 7px;
+  padding: 8px 10px;
+  width: 230px;
+  margin-right: 7px;
+}
+.information button {
+  background-color: #08a885;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: none;
+}
+.form-error {
+  display: none;
+  color: rgb(49, 49, 255);
+  font-size: 0.8rem;
+  padding: 5px 2px;
+}
 
 footer {
   display: flex;
   padding-top: 10%;
   padding-bottom: 5%;
-  gap: 15%;
+  justify-content: space-between;
 }
-footer h3 {
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.1rem;
-  padding-bottom: 10px;
+
+footer div {
+  display: inline-flex;
+  gap: 25px;
 }
+
+footer p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 footer a {
   display: block;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  color: #6e6e6e;
-  padding-bottom: 4px;
+  color: #222222;
+}
+
+@media (max-width: 768px) {
+  header,
+  .herotop,
+  .information,
+  footer {
+    padding: 0 5%;
+  }
+  .slider {
+    margin: 0 5%;
+    overflow-x: scroll;
+  }
+  .slider .item {
+    min-width: 200px;
+    margin: 0 30px 0 0;
+  }
+  .information .left {
+    width: 100%;
+  }
 }

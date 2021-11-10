@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+.herotop,
+.information,
+footer {
+  padding: 0 10%;
+}
+
+.navLogo,
+.topNav {
+  margin-top: 5%;
+}
+
+.navLogo {
+  text-decoration: none;
+  color: white;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: block;
+  float: left;
+}
+
+.topNav {
+  display: block;
+  float: right;
+}
+.topNav a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+#navButton {
+  background-color: #08a885;
+  color: #222222;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 400;
+}
+
+.herotop {
+  background-image: url(../images/herotop.jpg);
+  background-size: cover;
+  background-position: 50% 25%;
+  height: 70vh;
+}
+.herotop h1 {
+  margin: 0;
+  padding-top: 20%;
+  font-size: 3.7rem;
+  font-weight: 500;
+  max-width: 700px;
+  color: white;
+}
+.herotop p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.herotopMenu {
+  display: none;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -30px;
+  background-color: #ee4d1c;
+  width: auto;
+  padding: 14px 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px #29292957;
+}
+.herotopMenu a {
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.herotopMenu a:hover {
+  background-color: #5876fc;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+h2 span {
+  float: right;
+}
+h2 span a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.latestPosts {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.latestPosts p button {
+  font-size: 40px;
+  color: #222222;
+  cursor: pointer;
+  margin: 0 4px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+.latestPosts p button:hover {
+  background-color: #dbeceb;
+}
+
+.slider {
+  height: 300px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider .item {
+  background-color: rgb(225, 233, 233);
+  border-radius: 50px;
+  height: 200px;
+  min-width: 260px;
+  margin: 0 30px 0 0;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 100%;
+  }
+  .slider .item {
+    min-width: 200px;
+    margin: 0 20px 0 0;
+  }
+}
+
+.information {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.information .left {
+  background-color: #08a885;
+  border-radius: 20px;
+  padding: 60px 50px;
+  width: 64%;
+}
+.information .right {
+  background-color: #dbeceb;
+  border-radius: 20px;
+  padding: 30px 40px;
+  height: 155px;
+}
+.information p {
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 400px;
+  margin-top: 20px;
+}
+.information a {
+  background-color: #602bf1;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.information h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.newsletterInput {
+  border: none;
+  border-radius: 7px;
+  padding: 8px 10px;
+  width: 230px;
+  margin-right: 7px;
+}
+.information button {
+  background-color: #08a885;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 7px;
+  border: none;
+}
+.form-error {
+  display: none;
+  color: rgb(49, 49, 255);
+  font-size: 0.8rem;
+  padding: 5px 2px;
+}
+
+footer {
+  display: flex;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+}
+
+footer div {
+  display: inline-flex;
+  gap: 25px;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #222222;
+}

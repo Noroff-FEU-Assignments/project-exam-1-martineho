@@ -1,6 +1,8 @@
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed";
-const postsContainer = document.querySelector(".slider");
+const container = document.querySelector(".slider");
 const image = document.querySelector(".postImg");
+const btnLeft = document.querySelector("#left-button");
+const btnRight = document.querySelector("#right-button");
 
 async function getPosts() {
 
@@ -12,7 +14,7 @@ async function getPosts() {
 
       const posts = results;
 
-      postsContainer.innerHTML = "";
+      container.innerHTML = "";
 
       for (let i = 0; i < posts.length; i++) {
 
@@ -20,18 +22,34 @@ async function getPosts() {
           break;
         }
   
-        postsContainer.innerHTML +=
-          `<div class="slider">
-              <a class="post">
-                    <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
-                  <h4 class="postTitle">${posts[i].title.rendered}</h4>
-              </a>
-          </div>`;
+        container.innerHTML +=
+          ` 
+          <a href="" class="item">
+                    <picture>
+                          <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
+                    </picture>
+                    <div class="title">
+                        <p>${posts[i].title.rendered}</p>
+                    </div>
+                </a>`;
       }
 
 }
 
 getPosts();
+
+
+btnRight.addEventListener("click", () => {
+
+  container.scrollLeft += 1200;
+
+});
+
+btnLeft.addEventListener("click", () => {
+
+  container.scrollLeft -= 1200;
+
+});
 
 
 // <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
