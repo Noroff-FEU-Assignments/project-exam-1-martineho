@@ -39,20 +39,16 @@ async function getPosts() {
 getPosts();
 
 
-btnRight.addEventListener("click", () => {
+btnRight.addEventListener("click", (e) => {
+  e.preventDefault();
 
   container.scrollLeft += 1200;
 
 });
 
-btnLeft.addEventListener("click", () => {
+btnLeft.addEventListener("click", (e) => {
+  e.preventDefault();
 
   container.scrollLeft -= 1200;
 
 });
-
-
-// <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
-// <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
-
-// <div class="postImg">${posts[i]._embedded.wp:featuredmedia[i].source_url}</div> 
