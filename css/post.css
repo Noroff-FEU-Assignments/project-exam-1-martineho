@@ -11,6 +11,9 @@ header {
 .topNav a {
   color: #222;
 }
+.topNav a:hover {
+  color: #222;
+}
 h1 {
   padding: 0;
   margin-bottom: 20px;

@@ -25,7 +25,7 @@ async function getPosts() {
   
         container.innerHTML +=
           ` 
-          <a href="post.html?id=${posts[i].id}" class="item">
+          <a href="post.html?id=${posts[i].link}" class="item">
                     <picture>
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
@@ -53,3 +53,4 @@ btnLeft.addEventListener("click", (e) => {
   container.scrollLeft -= 1200;
 
 });
+

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -22,7 +23,7 @@ footer {
 
 .navLogo,
 .topNav {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .navLogo {
@@ -44,17 +45,23 @@ footer {
   font-weight: 400;
   color: white;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 10px;
+  padding: 6px 16px;
+  border-radius: 5px;
+  letter-spacing: 1px;
 }
 .topNav a.active {
-  color: #c814ff;
+  color: #6360ff;
 }
-#navButton {
-  background-color: #c814ff;
+.topNav a.active:hover {
+  pointer-events: none;
+}
+.topNav a:hover {
+  background-color: #6360ff57;
   color: white;
-  padding: 8px 20px;
-  border-radius: 10px;
-  font-weight: 400;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: ease-in 0.1s;
 }
 
 .herotop {
@@ -65,37 +72,36 @@ footer {
 }
 .herotop h1 {
   margin: 0;
-  padding-top: 20%;
+  padding-top: 22%;
   font-size: 3.7rem;
   font-weight: 500;
-  max-width: 700px;
+  max-width: 800px;
   color: white;
 }
 .herotop p {
   font-size: 1.5rem;
   color: white;
+  margin: 20px 1px;
+  font-weight: 200;
 }
-
-.herotopMenu {
-  display: none;
-  position: absolute;
-  margin-left: 10%;
-  margin-top: -30px;
-  background-color: #ee4d1c;
-  width: auto;
-  padding: 14px 25px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 8px #29292957;
-}
-.herotopMenu a {
-  color: white;
-  padding: 15px 20px;
+.herotop p span a {
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 300;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
 }
-.herotopMenu a:hover {
-  background-color: #5876fc;
+.herotop p span a:hover {
+  color: #ffbb93;
+  transition: ease-in 0.1s;
+}
+.herotop button {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.1rem;
+  padding: 7px 17px;
+  border: none;
+  background-color: #4542ff;
+  border-radius: 5px;
 }
 
 h2 {
@@ -181,14 +187,14 @@ h2 span a {
   justify-content: space-between;
 }
 .information .left {
-  background-color: #08a885;
-  border-radius: 20px;
+  background-color: #4542ff;
+  border-radius: 15px;
   padding: 60px 50px;
   width: 63%;
 }
 .information .right {
-  background-color: #dbeceb;
-  border-radius: 20px;
+  background-color: #f5dfdf;
+  border-radius: 15px;
   padding: 30px 40px;
   height: 155px;
 }
@@ -220,7 +226,7 @@ h2 span a {
   margin-right: 7px;
 }
 .information button {
-  background-color: #08a885;
+  background-color: #ca7992;
   color: white;
   padding: 8px 15px;
   border-radius: 7px;

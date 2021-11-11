@@ -10,6 +10,9 @@ header {
 .topNav a {
   color: #222;
 }
+.topNav a:hover {
+  color: #222;
+}
 .about-content {
   padding: 10% 10%;
   display: flex;
