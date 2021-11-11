@@ -249,6 +249,15 @@ h2 span a {
   padding: 5px 2px;
 }
 
+input:focus {
+  outline: none;
+  border: 2px solid #99b1e6;
+}
+
+input:focus::placeholder {
+  color: rgb(165, 165, 173);
+}
+
 footer {
   display: flex;
   padding-top: 10%;
