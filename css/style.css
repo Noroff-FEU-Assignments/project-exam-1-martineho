@@ -46,6 +46,9 @@ footer {
   text-decoration: none;
   margin-left: 40px;
 }
+.topNav a.active {
+  color: #c814ff;
+}
 #navButton {
   background-color: #c814ff;
   color: white;
