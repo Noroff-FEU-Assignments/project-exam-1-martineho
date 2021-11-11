@@ -18,19 +18,26 @@ async function fetchPost(){
     
         const json = await response.json();
     
-        // console.log(json);
+        console.log(json);
     
         document.title = `${json.title}` ;
     
         container.innerHTML = "";
     
         container.innerHTML += 
-        `<header>
+        `
+        <div class="breadcrumbs">
+          
+                <a href="">Blog</a>
+                <a class="active">${json.title}</a>
+           
+        </div>
+        <header>
             <h1>${json.title}</h1>
                 <div class="postDetails">
-                    <a>By <span>Name</span></a>
-                    <a>Published <span>Date</span></a>
-                    <a class="categoryTag" href="">Category</a>
+                    <a>By <span>${json.author}</span></a>
+                    <a>Published <span>${json.date}</span></a>
+                    <a class="categoryTag" href="">${json.category}</a>
                 </div>
         </header>
 
@@ -39,7 +46,7 @@ async function fetchPost(){
         </picture>
 
         <section class="text">
-            <p>fill text here</p>
+            <p>${json.content}</p>
         </section>
         `;
 

@@ -30,7 +30,7 @@ async function getPosts() {
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
                     <div class="title">
-                        <p>${posts[i].title.rendered}</p>
+                        <p> ${posts[i].title.rendered}</p>
                     </div>
                 </a>`;
       }

@@ -14,9 +14,24 @@ header {
 .topNav a:hover {
   color: #222;
 }
+.breadcrumbs {
+  margin-left: 10%;
+}
+.breadcrumbs a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.breadcrumbs a.active {
+  color: #4542ff;
+}
+ul {
+  list-style: none;
+  display: inline;
+}
 h1 {
   padding: 0;
   margin-bottom: 20px;
+  margin-top: 5%;
   font-size: 3rem;
   font-weight: 500;
   max-width: 700px;
@@ -30,7 +45,7 @@ h1 {
 }
 
 .postDetails a {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 300;
@@ -43,18 +58,18 @@ h1 {
   color: #222;
 }
 a.categoryTag {
-  background-color: rgb(244, 234, 247);
+  background-color: #cfdcf0;
   color: #222;
   padding: 5px 10px;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.8rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
   margin-left: 20px;
   border-right: none;
 }
 
 main {
-  margin: 8% 0;
+  margin: 3% 0;
 }
 main header {
   height: auto;
@@ -62,10 +77,10 @@ main header {
 }
 picture {
   display: block;
-  background-color: antiquewhite;
+  background-color: rgb(197, 194, 191);
   margin: 0px 10%;
-  height: 400px;
-  border-radius: 10px;
+  height: 600px;
+  border-radius: 15px;
 }
 .text {
   margin: 5% 10%;

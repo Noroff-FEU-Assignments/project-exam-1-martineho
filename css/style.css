@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  background-color: #f3f3f3;
 }
 
 header,
@@ -51,13 +52,13 @@ footer {
   letter-spacing: 1px;
 }
 .topNav a.active {
-  color: #6360ff;
+  color: #4542ff;
 }
 .topNav a.active:hover {
   pointer-events: none;
 }
 .topNav a:hover {
-  background-color: #6360ff57;
+  background-color: #4542ff75;
   color: white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -91,7 +92,7 @@ footer {
   font-weight: 400;
 }
 .herotop p span a:hover {
-  color: #ffbb93;
+  color: #ff9c8f;
   transition: ease-in 0.1s;
 }
 .herotop button {
@@ -100,8 +101,14 @@ footer {
   font-size: 1.1rem;
   padding: 7px 17px;
   border: none;
-  background-color: #4542ff;
   border-radius: 5px;
+  background-color: #4542ff;
+}
+.herotop button:hover {
+  background-color: #4542ff75;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: ease-in 0.1s;
 }
 
 h2 {
@@ -119,81 +126,93 @@ h2 span a {
 
 .latestPosts {
   padding-top: 5%;
-  padding-bottom: 3%;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 .latestPosts p button {
-  background-color: white;
+  width: 40px;
+  height: 40px;
   font-size: 40px;
   color: #222222;
   cursor: pointer;
-  margin: 0 4px;
-  width: 30px;
-  height: 30px;
+  margin: 0 2px;
   display: inline-block;
-  line-height: 18px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 50px;
+  line-height: 25px;
   padding: 5px;
   border: none;
   outline: none;
 }
-.latestPosts p button:hover {
-  background-color: #dbeceb;
+.latestPosts p button img {
+  margin: -4px;
+  padding-right: 8px;
+  padding-left: 1px;
+  opacity: 50%;
 }
 
 .slider {
-  margin: 0 10%;
+  margin: 30px 10% 30px 10%;
   padding-bottom: 20px;
-  height: 300px;
+  height: 320px;
   display: flex;
   align-items: center;
   overflow-x: hidden;
-  gap: 30px;
+  gap: 10px;
 }
 
 .slider .item {
   border-radius: 20px;
-  height: 270px;
-  min-width: 260px;
-  max-width: 260px;
-  margin: 0 5px 0px 0;
+  height: 250px;
+  min-width: 280px;
+  max-width: 280px;
+  margin: 0 2px 0px 0;
+  padding-bottom: 20px;
   text-decoration: none;
 }
 
 .item .title {
-  padding: 10px 20px 20px 10px;
+  padding: 0px 15px;
 }
 
 .item .title p {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .slider .item img {
   padding: 10px;
-  width: 260px;
-  height: 180px;
+  width: 280px;
+  height: 200px;
   border-radius: 20px;
 }
 
+.featured {
+  background-image: url(../images/DSC02059.JPG);
+  background-size: cover;
+  background-position-y: 20%;
+  background-color: #c4d1be;
+  height: 400px;
+  margin: 0 10%;
+  border-radius: 15px;
+}
+
 .information {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
 }
 .information .left {
-  background-color: #4542ff;
+  background-color: #c4d1be;
   border-radius: 15px;
   padding: 60px 50px;
-  width: 63%;
+  width: 64%;
 }
 .information .right {
-  background-color: #f5dfdf;
+  background-color: #cfdcf0;
   border-radius: 15px;
   padding: 30px 40px;
   height: 155px;
@@ -204,15 +223,6 @@ h2 span a {
   font-weight: 300;
   max-width: 400px;
   margin-top: 20px;
-}
-.information a {
-  background-color: #602bf1;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-weight: 300;
-  font-size: 1rem;
-  text-decoration: none;
 }
 .information h3 {
   font-weight: 500;
@@ -226,7 +236,7 @@ h2 span a {
   margin-right: 7px;
 }
 .information button {
-  background-color: #ca7992;
+  background-color: #4542ff;
   color: white;
   padding: 8px 15px;
   border-radius: 7px;
