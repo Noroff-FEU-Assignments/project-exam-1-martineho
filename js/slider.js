@@ -24,7 +24,7 @@ async function getPosts() {
   
         container.innerHTML +=
           ` 
-          <a href="" class="item">
+          <a href="post.html?id=${posts[i].id}" class="item">
                     <picture>
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
