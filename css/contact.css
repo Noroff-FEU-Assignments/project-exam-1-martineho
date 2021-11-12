@@ -12,24 +12,27 @@ body {
 }
 header.contact {
   height: 70vh;
-  background-color: #cfdcf0;
+  background-color: rgb(238, 230, 230);
   text-align: center;
   margin: auto auto;
 }
 h1 {
-  padding-top: 15%;
+  padding-top: 16%;
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #222222;
 }
 p {
   font-size: 1.2rem;
+  max-width: 650px;
+  margin: auto auto;
+  font-weight: 300;
 }
 .container {
   position: relative;
-  padding: 3%;
-  margin: -12% auto 10% auto;
+  padding: 4% 2%;
+  margin: -10% auto 0 auto;
   max-width: 66%;
   border-radius: 15px;
   background-color: #fff;
@@ -48,7 +51,7 @@ label {
   width: 100%;
   margin-top: 1.8rem;
   font-size: 0.9rem;
-  color: rgb(127, 127, 138);
+  color: rgb(104, 104, 112);
 }
 input {
   width: 100%;
@@ -57,18 +60,6 @@ input {
   font-size: 16px;
   border: 2px solid rgb(222, 225, 228);
   border-radius: 5px;
-}
-
-textarea {
-  border: 2px solid rgb(222, 225, 228);
-  margin-top: 0.8rem;
-  width: 100%;
-  resize: none;
-  border-radius: 5px;
-}
-textarea:focus {
-  outline: none;
-  border: 2px solid #99b1e6;
 }
 
 ::placeholder {
@@ -97,16 +88,15 @@ input:focus::placeholder {
 }
 
 button {
-  background: rgb(88, 28, 255);
+  background: #4542ff;
   width: 150px;
   padding: 0.6rem;
   color: white;
-  margin-top: 1.8rem;
-  margin-bottom: 1.8rem;
   border-radius: 10px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  margin: 10px auto 0 auto;
 }
 
 .form-error {

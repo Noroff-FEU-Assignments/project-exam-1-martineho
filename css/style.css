@@ -17,8 +17,7 @@ body {
 
 header,
 .herotop,
-.information,
-footer {
+.information {
   padding: 0 10%;
 }
 
@@ -42,14 +41,13 @@ footer {
   float: right;
 }
 .topNav a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   color: white;
   text-decoration: none;
   margin-left: 10px;
   padding: 6px 16px;
-  border-radius: 5px;
-  letter-spacing: 1px;
+  border-radius: 10px;
 }
 .topNav a.active {
   color: #4542ff;
@@ -98,10 +96,10 @@ footer {
 .herotop button {
   margin-top: 20px;
   color: white;
-  font-size: 1.1rem;
-  padding: 7px 17px;
+  font-size: 1rem;
+  padding: 8px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #4542ff;
 }
 .herotop button:hover {
@@ -260,8 +258,7 @@ input:focus::placeholder {
 
 footer {
   display: flex;
-  padding-top: 10%;
-  padding-bottom: 5%;
+  padding: 7% 5% 3% 5%;
   justify-content: space-between;
 }
 
