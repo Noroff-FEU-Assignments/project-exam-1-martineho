@@ -162,12 +162,16 @@ h2 span a {
 
 .slider .item {
   border-radius: 20px;
-  height: 250px;
+  height: 280px;
   min-width: 280px;
   max-width: 280px;
-  margin: 0 2px 0px 0;
+  margin: 0 1px 0px 0;
   padding-bottom: 20px;
   text-decoration: none;
+}
+.slider .item:hover {
+  background-color: #e7e5e2;
+  transition: ease-in 0.1s;
 }
 
 .item .title {
@@ -204,7 +208,7 @@ h2 span a {
   justify-content: space-between;
 }
 .information .left {
-  background-color: #c4d1be;
+  background-color: #e7e5e2;
   border-radius: 15px;
   padding: 60px 50px;
   width: 64%;
