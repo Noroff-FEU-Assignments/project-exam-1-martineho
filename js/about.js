@@ -1,37 +1,23 @@
-const url = "http://martineho.com/travelcoco/wp-json/wp/v2/pages/";
-const corsFix = "https://noroffcors.herokuapp.com/" + url;
 const container = document.querySelector(".about-content");
 
-console.log(url);
+const url = "http://martineho.com/travelcoco/wp-json/wp/v2/pages/18";
+const corsFix = "https://noroffcors.herokuapp.com/" + url;
 
 async function getContent() {
 
     const response = await fetch(corsFix);
 
-    const results = await response.json();
+    const content= await response.json();
 
-    console.log(results);
+    console.log(content);
 
-    const about = results;
-
-    container.innerHTML = "";
-
-    for (let i = 0; i < about.length; i++) {
-
-      if (i === 8) {
-        break;
-      }
-
-      container.innerHTML +=
-        ` 
-        <div class="text">
-                <h1>About us</h1>
-                <p>Are you a traveller and wanna share your story? Send us an email to collab@travelcoco.com </p>
+    container.innerHTML +=
+        ` <div class="text">
+                <h1>${content.title.rendered}</h1>
+                <p>${content.content.rendered}</p>
             </div>
             <div class="visuals">
-            </div>`;
-    }
-
+            <figure></figure>
+          </div>`;
 }
-
 getContent();
