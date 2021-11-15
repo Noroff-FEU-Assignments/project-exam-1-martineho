@@ -1,0 +1,84 @@
+header {
+  height: 100px;
+}
+header.blog {
+  margin-top: 15vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.blog .categories {
+  margin-top: 2rem;
+}
+.blog .categories a {
+  margin-left: -5px;
+  font-size: 1rem;
+  padding: 5px 20px;
+  font-weight: 300;
+  color: rgb(131, 131, 131);
+  border-right: solid 0.8px rgb(180, 180, 180);
+  letter-spacing: 1px;
+}
+.categories a:hover {
+  background-color: #4542ff48;
+  color: #4542ff;
+  border-radius: 5px;
+}
+.navLogo {
+  color: #222;
+}
+.topNav a {
+  color: #222;
+}
+.topNav a:hover {
+  color: #222;
+}
+.container {
+  margin: 0px 10% 10px 10%;
+  padding-bottom: 5px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  row-gap: 30px;
+}
+
+.container .item {
+  border-radius: 10px;
+  height: 270px;
+  min-width: 260px;
+  max-width: 260px;
+  margin: 0 1px 0px 0;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.container .item img {
+  width: 260px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.container .item:hover {
+  scale: 1.03;
+  color: #222;
+  transition: 0.2s;
+}
+
+.item .title {
+  padding: 5px 5px;
+}
+
+.item .title p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222;
+}

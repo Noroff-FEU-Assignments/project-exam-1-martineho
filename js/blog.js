@@ -1,9 +1,9 @@
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed";
 const corsFix = "https://noroffcors.herokuapp.com/" + url;
-const container = document.querySelector(".slider");
+const container = document.querySelector(".container");
 const image = document.querySelector(".postImg");
-const btnLeft = document.querySelector("#left-button");
-const btnRight = document.querySelector("#right-button");
+const postTitle = document.querySelector(".titleText");
+const item = document.querySelector(".item");
 
 async function getPosts() {
 
@@ -19,7 +19,7 @@ async function getPosts() {
 
       for (let i = 0; i < posts.length; i++) {
 
-        if (i === 8) {
+        if (i === 12) {
           break;
         }
   
@@ -30,7 +30,7 @@ async function getPosts() {
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
                     <div class="title">
-                        <p> ${posts[i].title.rendered}</p>
+                        <p class="titleText">${posts[i].title.rendered}</p>
                     </div>
                 </a>`;
       }
@@ -40,17 +40,9 @@ async function getPosts() {
 getPosts();
 
 
-btnRight.addEventListener("click", (e) => {
-  e.preventDefault();
 
-  container.scrollLeft += 1200;
+function onHover() {
+  
 
-});
-
-btnLeft.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  container.scrollLeft -= 1200;
-
-});
-
+}
+onHover();
