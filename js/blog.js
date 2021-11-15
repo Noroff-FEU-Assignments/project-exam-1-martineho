@@ -19,7 +19,7 @@ async function getPosts() {
 
       for (let i = 0; i < posts.length; i++) {
 
-        if (i === 12) {
+        if (i === 9) {
           break;
         }
   
@@ -30,6 +30,7 @@ async function getPosts() {
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
                     <div class="title">
+                        <div>>></div>
                         <p class="titleText">${posts[i].title.rendered}</p>
                     </div>
                 </a>`;
