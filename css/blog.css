@@ -19,9 +19,9 @@ h1 {
 .blog .categories a {
   margin-left: -5px;
   font-size: 1rem;
-  padding: 5px 20px;
-  font-weight: 300;
-  color: rgb(131, 131, 131);
+  padding: 0px 20px;
+  font-weight: 400;
+  color: #222;
   border-right: solid 0.8px rgb(180, 180, 180);
   letter-spacing: 1px;
 }

@@ -129,25 +129,20 @@ h2 span a {
   justify-content: space-between;
 }
 .latestPosts p button {
-  width: 40px;
-  height: 40px;
-  font-size: 40px;
-  color: #222222;
   cursor: pointer;
   margin: 0 2px;
   display: inline-block;
   text-align: center;
-  border-radius: 50px;
-  line-height: 25px;
-  padding: 5px;
   border: none;
   outline: none;
+  background-color: transparent;
 }
 .latestPosts p button img {
-  margin: -4px;
-  padding-right: 8px;
-  padding-left: 1px;
-  opacity: 50%;
+  border-radius: 5px;
+  padding: 5px;
+}
+.latestPosts p button img:hover {
+  background-color: rgb(221, 227, 255);
 }
 
 .slider {
@@ -158,6 +153,7 @@ h2 span a {
   align-items: center;
   overflow-x: hidden;
   gap: 35px;
+  scroll-behavior: smooth;
 }
 
 .slider .item {
