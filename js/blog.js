@@ -1,9 +1,10 @@
-const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed";
+const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed&per_page=50";
 const corsFix = "https://noroffcors.herokuapp.com/" + url;
 const container = document.querySelector(".container");
 const image = document.querySelector(".postImg");
 const postTitle = document.querySelector(".titleText");
 const item = document.querySelector(".item");
+const button = document.querySelector(".more-button");
 
 async function getPosts() {
 
@@ -36,14 +37,8 @@ async function getPosts() {
                 </a>`;
       }
 
+
 }
 
 getPosts();
 
-
-
-function onHover() {
-  
-
-}
-onHover();
