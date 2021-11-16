@@ -15,8 +15,15 @@ async function getPosts() {
       console.log(results);
 
       const posts = results;
+      
+      generateHtml(posts);
+}
 
-      container.innerHTML = "";
+getPosts();
+
+function generateHtml(posts) { 
+
+   container.innerHTML = "";
 
       for (let i = 0; i < posts.length; i++) {
 
@@ -31,14 +38,10 @@ async function getPosts() {
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
                     <div class="title">
-                        <div>>></div>
+                        <div>></div>
                         <p class="titleText">${posts[i].title.rendered}</p>
                     </div>
                 </a>`;
       }
-
-
+      
 }
-
-getPosts();
-
