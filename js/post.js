@@ -9,6 +9,7 @@ if (id === null) {
 }
 
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts?_embed/" + id;
+const options = {};
 
 const container = document.querySelector(".container");
 
@@ -18,7 +19,7 @@ async function fetchPost(){
 
     try {
 
-        const response = await fetch(url);
+        const response = await fetch(url, options);
     
         const result = await response.json();
     
