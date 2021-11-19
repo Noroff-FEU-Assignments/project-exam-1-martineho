@@ -43,9 +43,9 @@ h1 {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 34px;
   row-gap: 30px;
 }
 

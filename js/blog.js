@@ -15,21 +15,23 @@ async function getPosts() {
       console.log(results);
 
       const posts = results;
+
+      // button.addEventListener("click");
       
-      generateHtml(posts);
+      generateHtml(posts, true);
 }
 
 getPosts();
 
-function generateHtml(posts) { 
+function generateHtml(posts, useLimit = false) {
+  container.innerHTML = '';
 
-   container.innerHTML = "";
+  let postLimit = posts.length;
+  if (useLimit === true) {
+    postLimit = 9;
+  } 
 
-      for (let i = 0; i < posts.length; i++) {
-
-        if (i === 9) {
-          break;
-        }
+  for (let i = 0; i < postLimit; i++) {
   
         container.innerHTML +=
           ` 

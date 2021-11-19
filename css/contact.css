@@ -12,13 +12,12 @@ body {
   color: #222;
 }
 header.contact {
-  height: 70vh;
-  background-color: #e7e5e2;
+  height: auto;
   text-align: center;
   margin: auto auto;
 }
 h1 {
-  padding-top: 20vh;
+  padding-top: 25vh;
   margin-bottom: 20px;
   font-size: 3rem;
   font-weight: 500;
@@ -31,7 +30,7 @@ p {
 }
 .container {
   padding: 4% 2%;
-  margin: -20vh auto 0 auto;
+  margin: 10vh auto 0 auto;
   max-width: 66%;
   border-radius: 15px;
   background-color: #fff;

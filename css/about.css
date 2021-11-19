@@ -1,8 +1,5 @@
 body {
-  background-color: #dbeceb;
-}
-header {
-  height: 100px;
+  background-color: #ffffff;
 }
 .navLogo {
   color: #222;
@@ -13,23 +10,97 @@ header {
 .topNav a:hover {
   color: #222;
 }
-.about-content {
-  padding: 10% 10%;
-  display: flex;
+
+main header {
+  height: auto;
+  background-color: #e2e7e6;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
+  text-align: center;
 }
 .text {
-  width: 50%;
+  max-width: 800px;
+  margin: auto auto;
 }
 .text p {
   font-size: 1.2rem;
-}
-.visuals {
-  width: 40%;
+  font-weight: 400;
+  margin: auto auto;
 }
 h1 {
   margin-bottom: 20px;
   font-size: 3rem;
   font-weight: 500;
-  max-width: 700px;
-  color: #222;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 5% 10%;
+}
+.team {
+  border-radius: 15px;
+  height: auto;
+  width: 60%;
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+  padding-top: 5%;
+}
+.group .member {
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.group .member img {
+  border-radius: 15px;
+}
+.group .member .name {
+  font-weight: 500;
+  padding: 5px 1px 0px 1px;
+}
+.group .member a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgb(114, 114, 114);
+  padding: 0;
+  margin: 0;
+}
+.group .member a:hover {
+  color: #4542ff;
+}
+
+.contact {
+  border-radius: 15px;
+  height: fit-content;
+  width: 33%;
+  padding: 40px 40px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+.contact a {
+  text-decoration: none;
+  font-weight: 500;
+  float: right;
+  color: #4542ff;
+}
+.contact a span {
+  color: #4542ff;
+  padding: 2px 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: auto auto;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
 }
