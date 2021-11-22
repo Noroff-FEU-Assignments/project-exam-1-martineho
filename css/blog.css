@@ -1,5 +1,17 @@
-header {
-  height: 100px;
+a.nav-logo {
+  color: #222222;
+}
+
+li.nav-item {
+  list-style: none;
+}
+
+a.nav-link {
+  color: #222222;
+}
+
+.bar {
+  background-color: #222222;
 }
 header.blog {
   margin-top: 15vh;

@@ -1,14 +1,20 @@
 body {
   background-color: #ffffff;
 }
-.navLogo {
-  color: #222;
+a.nav-logo {
+  color: #222222;
 }
-.topNav a {
-  color: #222;
+
+li.nav-item {
+  list-style: none;
 }
-.topNav a:hover {
-  color: #222;
+
+a.nav-link {
+  color: #222222;
+}
+
+.bar {
+  background-color: #222222;
 }
 
 main header {
@@ -17,6 +23,7 @@ main header {
   padding-top: 25vh;
   padding-bottom: 15vh;
   text-align: center;
+  margin-top: -120px;
 }
 .text {
   max-width: 800px;
