@@ -21,46 +21,68 @@ header,
   padding: 0 10%;
 }
 
-.navLogo,
-.topNav {
-  margin-top: 6%;
+header {
+  background-color: transparent;
 }
 
-.navLogo {
+a.nav-logo {
   text-decoration: none;
-  color: white;
   font-family: Quicksand;
   font-weight: 600;
   font-size: 1.5rem;
-  display: block;
-  float: left;
+  color: white;
 }
 
-.topNav {
-  display: block;
-  float: right;
+li.nav-item {
+  list-style: none;
 }
-.topNav a {
-  font-size: 1rem;
-  font-weight: 400;
-  color: white;
+
+a.nav-link {
   text-decoration: none;
-  margin-left: 10px;
-  padding: 6px 16px;
+  color: white;
+  padding: 8px 16px;
   border-radius: 10px;
+  transition: 0.3s ease;
 }
-.topNav a.active {
-  color: #4542ff;
-}
-.topNav a.active:hover {
-  pointer-events: none;
-}
-.topNav a:hover {
+a.nav-link:hover {
   background-color: #4542ff75;
   color: white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  transition: ease-in 0.1s;
+}
+
+.navbar {
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  right: 5%;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .herotop {
@@ -68,6 +90,7 @@ header,
   background-size: cover;
   background-position: 50% 25%;
   height: 100vh;
+  margin-top: -120px;
 }
 .herotop h1 {
   margin: 0;
@@ -299,6 +322,55 @@ footer a {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    min-height: 80px;
+  }
+  a.nav-logo {
+    color: white;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    width: 40%;
+    transition: 0.3s;
+    padding: 20px 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin: 0 5%;
+  }
+  .nav-item {
+    margin: 16px 8px;
+    color: #222222;
+  }
+  a.nav-link {
+    color: #222222;
+  }
+  a.nav-link:hover {
+    background-color: #4542ff75;
+    color: #222222;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+
   header,
   .herotop,
   .information,
