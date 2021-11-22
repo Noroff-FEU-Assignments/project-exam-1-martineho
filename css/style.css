@@ -423,10 +423,12 @@ footer a {
   }
   .information input {
     width: 100%;
-    font-size: 0.9rem;
   }
   .information button {
     margin-top: 20px;
+  }
+  input:focus::placeholder {
+    font-size: 0.9rem;
   }
 
   footer {
