@@ -45,12 +45,6 @@ function createHtml(post) {
 
     container.innerHTML += 
     `
-    <div class="breadcrumbs">
-      
-            <a href="">Blog</a>
-            <a class="active">${post.title.rendered}</a>
-       
-    </div>
         <header>
             <h1>${post.title.rendered}</h1>
                 <div class="postDetails">

@@ -14,7 +14,7 @@ a.nav-link {
   background-color: #222222;
 }
 header.blog {
-  margin-top: 15vh;
+  margin-top: 5vh;
   margin-bottom: 3vh;
   display: flex;
   flex-wrap: wrap;
@@ -39,15 +39,6 @@ h1 {
 }
 .categories a:hover {
   color: #4542ff;
-}
-.navLogo {
-  color: #222;
-}
-.topNav a {
-  color: #222;
-}
-.topNav a:hover {
-  color: #222;
 }
 .container {
   margin: 0px 10% 10px 10%;
@@ -122,5 +113,45 @@ footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  header.blog {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  .blog .categories {
+    margin: 1rem 0;
+  }
+  .blog .categories a {
+    font-size: 0.9rem;
+    padding: 0px 10px;
+    font-weight: 300;
+  }
+  .container {
+    margin: 0px 5% 10px 5%;
+    padding-bottom: 5px;
+    height: auto;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .container .item {
+    height: 300px;
+    max-width: 90vw;
+    margin: auto auto;
+  }
+  .container .item img {
+    width: 90vw;
+  }
+  button.more-button {
+    margin-left: 5vw;
+  }
+  footer {
+    padding-top: 10vh;
   }
 }

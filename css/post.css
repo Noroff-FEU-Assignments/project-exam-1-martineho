@@ -2,36 +2,36 @@ body {
   padding: 0%;
   margin: 0;
 }
-header {
-  height: 100px;
+a.nav-logo {
+  color: #222222;
 }
-.navLogo {
-  color: #222;
+
+li.nav-item {
+  list-style: none;
 }
-.topNav a {
-  color: #222;
+
+a.nav-link {
+  color: #222222;
 }
-.topNav a:hover {
-  color: #222;
+
+.bar {
+  background-color: #222222;
 }
+
 .breadcrumbs {
   margin-left: 10%;
+  margin-top: 5vh;
 }
 .breadcrumbs a {
   font-size: 1rem;
   text-decoration: none;
-}
-.breadcrumbs a.active {
   color: #4542ff;
 }
-ul {
-  list-style: none;
-  display: inline;
-}
+
 h1 {
   padding: 0;
   margin-bottom: 20px;
-  margin-top: 5%;
+  margin-top: 3%;
   font-size: 3rem;
   font-weight: 500;
   max-width: 700px;
@@ -71,18 +71,52 @@ a.categoryTag {
 main {
   margin: 3% 0;
 }
-main header {
-  height: auto;
-  margin-bottom: 60px;
+.container {
+  width: 75vw;
+  margin: auto auto;
 }
 picture {
   display: block;
   background-color: rgb(197, 194, 191);
   margin: 0px 10%;
-  height: 600px;
+  height: 50vh;
   border-radius: 15px;
 }
 .text {
   margin: 5% 10%;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 5vh;
+  }
+  .postDetails {
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .postDetails a {
+    font-size: 0.9rem;
+    display: block;
+    margin: 15px 2px;
+    padding: 0;
+    border: none;
+  }
+  a.categoryTag {
+    padding: 5px 10px;
+    width: fit-content;
+  }
+  main header {
+    margin: 0 5vw;
+  }
+  .container {
+    width: 100vw;
+  }
+  picture {
+    height: 25vh;
+    margin: 0;
+    border-radius: 0;
+  }
 }

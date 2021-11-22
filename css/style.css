@@ -62,7 +62,7 @@ a.nav-link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .hamburger {
@@ -323,6 +323,12 @@ footer a {
 }
 
 @media (max-width: 768px) {
+  header,
+  .herotop,
+  .information,
+  footer {
+    padding: 0 5%;
+  }
   .navbar {
     min-height: 80px;
   }
@@ -370,12 +376,6 @@ footer a {
   }
   .nav-menu.active {
     left: 5vw;
-  }
-  header,
-  .herotop,
-  .information,
-  footer {
-    padding: 0 5%;
   }
   .herotop h1 {
     padding-top: 40vh;
