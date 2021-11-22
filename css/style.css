@@ -418,6 +418,9 @@ footer a {
     height: fit-content;
     padding: 30px;
   }
+  .information p {
+    font-size: 0.9rem;
+  }
   .information input {
     width: 100%;
   }
