@@ -54,17 +54,29 @@ function generateHtml(posts, useLimit = false) {
   for (let i = 0; i < postLimit; i++) {
   
         container.innerHTML +=
-          ` 
-          <a href="post.html?id=${posts[i].id}" class="item">
+          ` <a href="post.html?id=${posts[i].id}" class="item">
                     <picture>
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
-                    <div class="title">
+                  <div class="title">
                         <div>></div>
                         <p class="titleText">${posts[i].title.rendered}</p>
-                    </div>
-                </a>`;
+                  </div>
+            </a>`;
       }
       
 }
 
+const categories = document.querySelector(".categories");
+
+categories.forEach(function (category) { 
+      category.onclick = function (event) {    
+      let newUrl;
+
+      const categoryChosen = event.target.value;
+      newUrl = corsFix + `?category=${categoryChosen}`
+
+      container.innerHTML = '';
+      getPosts(newUrl);
+}
+}) 

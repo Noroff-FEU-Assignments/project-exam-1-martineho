@@ -81,21 +81,22 @@ h1 {
 }
 button.more-button {
   position: absolute;
-  color: white;
+  color: #222;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 120px;
   margin-left: 45vw;
   background-color: transparent;
   outline: none;
   border: none;
-  padding: 8px 16px;
-  background-color: #4542ff;
+  padding: 8px 0px;
+  background-color: #cbcbe6;
   border-radius: 20px;
 }
 button.more-button:hover {
-  background-color: #4542ffbe;
-  transition: ease 0.3s;
+  background-color: #dedef1;
+  padding: 8px 16px;
+  transition: ease 0.5s;
 }
 
 footer {

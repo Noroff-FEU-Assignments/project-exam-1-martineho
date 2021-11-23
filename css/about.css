@@ -21,20 +21,22 @@ a.nav-link:hover {
 
 main header {
   height: auto;
-  background-color: #e2e7e6;
-  padding-top: 20vh;
-  padding-bottom: 15vh;
-  text-align: center;
-  margin-top: -120px;
+  background-color: #dbe7d1;
+  padding-top: 25vh;
+  padding-bottom: 11vh;
+  padding-left: 5.5%;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 15px;
 }
 .text {
   max-width: 800px;
-  margin: auto auto;
 }
 .text p {
   font-size: 1.2rem;
   font-weight: 400;
-  margin: auto auto;
 }
 h1 {
   margin-bottom: 20px;
