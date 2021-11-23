@@ -9,6 +9,9 @@ li.nav-item {
 a.nav-link {
   color: #222222;
 }
+a.nav-link:hover {
+  color: #222222;
+}
 
 .bar {
   background-color: #222222;
@@ -32,10 +35,9 @@ h1 {
   margin-left: -5px;
   font-size: 1rem;
   padding: 0px 20px;
-  font-weight: 400;
+  font-weight: 300;
   color: #222;
-  border-right: solid 0.8px rgb(180, 180, 180);
-  letter-spacing: 1px;
+  border-right: solid 0.8px #4542ff;
 }
 .categories a:hover {
   color: #4542ff;
@@ -81,7 +83,7 @@ button.more-button {
   position: absolute;
   color: white;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
   width: 120px;
   margin-left: 45vw;
   background-color: transparent;
@@ -89,7 +91,7 @@ button.more-button {
   border: none;
   padding: 8px 16px;
   background-color: #4542ff;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 button.more-button:hover {
   background-color: #4542ffbe;

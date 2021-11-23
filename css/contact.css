@@ -13,7 +13,9 @@ li.nav-item {
 a.nav-link {
   color: #222222;
 }
-
+a.nav-link:hover {
+  color: #222222;
+}
 .bar {
   background-color: #222222;
 }

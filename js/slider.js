@@ -31,7 +31,7 @@ async function getPosts() {
                     </picture>
                     <div class="title">
                       <div>></div>
-                      <p> ${posts[i].title.rendered}</p>
+                      <p>${posts[i].title.rendered}</p>
                     </div>
                 </a>`;
       }
