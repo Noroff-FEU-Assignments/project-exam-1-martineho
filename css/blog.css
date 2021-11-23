@@ -93,6 +93,7 @@ button.more-button {
 }
 button.more-button:hover {
   background-color: #4542ffbe;
+  transition: ease 0.3s;
 }
 
 footer {
