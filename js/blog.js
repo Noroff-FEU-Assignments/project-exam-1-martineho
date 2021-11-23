@@ -16,7 +16,27 @@ async function getPosts() {
 
       const posts = results;
 
-      // button.addEventListener("click");
+      let showPosts = false;
+
+      function togglePosts() {
+
+      showPosts = !showPosts;
+
+      generateHtml(posts, !showPosts);
+
+      if (showPosts === false){
+            button.innerHTML = "View more";
+      }
+      else  {
+            button.innerHTML = "View less";
+      }
+
+      }
+
+
+      button.addEventListener("click", () => {
+            togglePosts();
+          });
       
       generateHtml(posts, true);
 }
@@ -47,3 +67,4 @@ function generateHtml(posts, useLimit = false) {
       }
       
 }
+

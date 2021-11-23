@@ -194,11 +194,17 @@ h2 span a {
 }
 .item:hover .title p {
   padding-left: 5px;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
+  color: #4542ff;
 }
 .item:hover .title div {
   transition: ease-in 0.2s;
   display: inline-block;
+}
+.item:hover img {
+  backdrop-filter: blur(2px);
+  filter: blur(0.8px) opacity(0.9);
+  transition: 0.5s ease-in-out;
 }
 .item .title {
   padding: 5px 2px;
