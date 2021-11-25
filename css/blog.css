@@ -81,7 +81,7 @@ h1 {
 }
 button.more-button {
   position: absolute;
-  color: #222;
+  color: white;
   font-weight: 400;
   font-size: 0.9rem;
   width: 120px;
@@ -90,11 +90,11 @@ button.more-button {
   outline: none;
   border: none;
   padding: 8px 0px;
-  background-color: #cbcbe6;
-  border-radius: 20px;
+  background-color: #4542ff;
+  border-radius: 5px;
 }
 button.more-button:hover {
-  background-color: #dedef1;
+  background-color: rgb(191, 191, 236);
   padding: 8px 16px;
   transition: ease 0.5s;
 }

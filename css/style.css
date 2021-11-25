@@ -313,7 +313,7 @@ textarea:focus::placeholder {
 
 footer {
   display: flex;
-  padding: 7% 5% 3% 5%;
+  padding: 7% 10% 3% 10%;
   justify-content: space-between;
 }
 

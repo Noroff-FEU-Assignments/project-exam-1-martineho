@@ -22,8 +22,8 @@ a.nav-link:hover {
 }
 
 .breadcrumbs {
-  margin-left: 10%;
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 .breadcrumbs a {
   font-size: 1rem;
@@ -33,28 +33,28 @@ a.nav-link:hover {
 
 h1 {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   margin-top: 3%;
   font-size: 3rem;
   font-weight: 500;
-  max-width: 700px;
+  max-width: 800px;
   color: #222;
 }
 
 .postDetails {
-  margin-left: -20px;
+  margin-left: -15px;
   margin-top: 5px;
   margin-bottom: 30px;
 }
 
 .postDetails a {
-  font-size: 1rem;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-weight: 300;
+  font-size: 0.9rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 400;
   color: rgb(131, 131, 131);
   border-right: solid 0.8px rgb(180, 180, 180);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 .postDetails a span {
   font-weight: 400;
@@ -67,7 +67,7 @@ a.categoryTag {
   text-decoration: none;
   border-radius: 5px;
   font-size: 0.9rem;
-  margin-left: 20px;
+  margin-left: 15px;
   border-right: none;
 }
 
@@ -76,18 +76,45 @@ main {
 }
 .container {
   width: 75vw;
+  max-width: 1000px;
   margin: auto auto;
 }
-picture {
-  display: block;
-  background-color: rgb(197, 194, 191);
+.featured-image {
   margin: 0px 10%;
-  height: 50vh;
+  width: 60vw;
   border-radius: 15px;
+}
+.wp-block-image img {
+  border-radius: 15px;
+}
+figcaption {
+  font-size: 0.9rem;
+  color: #222222;
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+}
+.wp-block-quote p {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .text {
   margin: 5% 10%;
+}
+.text p {
+  margin: 5vh 0;
   font-weight: 400;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+}
+
+@media (max-width: 900px) {
+  .wp-block-image img {
+    width: 550px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -117,9 +144,12 @@ picture {
   .container {
     width: 100vw;
   }
-  picture {
-    height: 25vh;
+  .featured-image {
+    width: 100vw;
     margin: 0;
     border-radius: 0;
+  }
+  .wp-block-image img {
+    width: 80vw;
   }
 }
