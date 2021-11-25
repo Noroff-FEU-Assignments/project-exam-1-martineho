@@ -9,9 +9,9 @@ const button = document.querySelector(".more-button");
 async function getPosts() {
 
       const response = await fetch(corsFix);
-  
+
       const results = await response.json();
-  
+
       console.log(results);
 
       const posts = results;
@@ -20,41 +20,41 @@ async function getPosts() {
 
       function togglePosts() {
 
-      showPosts = !showPosts;
+            showPosts = !showPosts;
 
-      generateHtml(posts, !showPosts);
+            generateHtml(posts, !showPosts);
 
-      if (showPosts === false){
-            button.innerHTML = "View more";
-      }
-      else  {
-            button.innerHTML = "View less";
-      }
+            if (showPosts === false) {
+                  button.innerHTML = "View more";
+            }
+            else {
+                  button.innerHTML = "View less";
+            }
 
       }
 
 
       button.addEventListener("click", () => {
             togglePosts();
-          });
-      
+      });
+
       generateHtml(posts, true);
 }
 
 getPosts();
 
 function generateHtml(posts, useLimit = false) {
-  container.innerHTML = '';
+      container.innerHTML = '';
 
-  let postLimit = posts.length;
-  if (useLimit === true) {
-    postLimit = 9;
-  } 
+      let postLimit = posts.length;
+      if (useLimit === true) {
+            postLimit = 9;
+      }
 
-  for (let i = 0; i < postLimit; i++) {
-  
-        container.innerHTML +=
-          ` <a href="post.html?id=${posts[i].id}" class="item">
+      for (let i = 0; i < postLimit; i++) {
+
+            container.innerHTML +=
+                  ` <a href="post.html?id=${posts[i].id}" class="item">
                     <picture>
                           <img src="${posts[i]._embedded['wp:featuredmedia'][0].source_url}" class="postImg"> 
                     </picture>
@@ -64,19 +64,19 @@ function generateHtml(posts, useLimit = false) {
                   </div>
             </a>`;
       }
-      
+
 }
 
 const categories = document.querySelector(".categories");
 
-categories.forEach(function (category) { 
-      category.onclick = function (event) {    
-      let newUrl;
+categories.forEach(function (category) {
+      category.onclick = function (event) {
+            let newUrl;
 
-      const categoryChosen = event.target.value;
-      newUrl = corsFix + `?category=${categoryChosen}`
+            const categoryChosen = event.target.value;
+            newUrl = corsFix + `?category=${categoryChosen}`
 
-      container.innerHTML = '';
-      getPosts(newUrl);
-}
-}) 
+            container.innerHTML = '';
+            getPosts(newUrl);
+      }
+})
