@@ -121,7 +121,7 @@ a.nav-link:hover {
   color: #ff9c8f;
   transition: ease-in 0.1s;
 }
-.herotop button {
+.herotop .cta {
   margin-top: 20px;
   color: white;
   font-size: 1rem;
@@ -130,7 +130,7 @@ a.nav-link:hover {
   border-radius: 10px;
   background-color: #4542ff;
 }
-.herotop button:hover {
+.herotop .cta:hover {
   background-color: #4542ff75;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
