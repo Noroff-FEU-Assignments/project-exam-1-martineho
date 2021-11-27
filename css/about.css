@@ -21,9 +21,7 @@ a.nav-link:hover {
 
 main header {
   height: auto;
-  background-image: url(../images/Illustration.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: #dbecd7;
   padding-top: 25vh;
   padding-bottom: 11vh;
   padding-left: 5.5%;
