@@ -110,6 +110,24 @@ figcaption {
   display: none;
   position: fixed;
 }
+.loader {
+  margin: 5vh auto 20vh auto;
+  border: 15px solid #dfe5ff;
+  border-top: 15px solid rgb(88, 28, 255);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 @media (max-width: 900px) {
   .wp-block-image img {
