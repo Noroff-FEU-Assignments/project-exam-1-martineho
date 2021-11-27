@@ -44,14 +44,14 @@ getPosts();
 btnRight.addEventListener("click", (e) => {
   e.preventDefault();
 
-  container.scrollLeft += 1200;
+  container.scrollLeft += 300;
 
 });
 
 btnLeft.addEventListener("click", (e) => {
   e.preventDefault();
 
-  container.scrollLeft -= 1200;
+  container.scrollLeft -= 300;
 
 });
 

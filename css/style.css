@@ -108,7 +108,7 @@ a.nav-link:hover {
 .herotop p {
   font-size: 1.5rem;
   color: white;
-  padding: 20px 1px;
+  padding: 15px 1px;
   margin-bottom: 20px;
   font-weight: 300;
 }
@@ -236,44 +236,42 @@ h2 span a {
 }
 
 .information {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
-.information .left {
-  background-color: #e7e5e2;
+.information .newsletter {
+  background-color: #598d8d;
   border-radius: 15px;
-  padding: 60px 50px;
-  width: 64%;
+  padding: 50px 50px;
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 0px 20px #ebebeb;
 }
-.information .right {
-  background-color: #cfdcf0;
-  border-radius: 15px;
-  padding: 30px 40px;
-  height: 155px;
+.newsletter div {
+  padding-top: 2%;
 }
-.information p {
-  color: #222222;
-  font-size: 1rem;
-  font-weight: 400;
-  max-width: 400px;
-  margin: 10px 0 50px 0;
+.newsletter form {
+  display: flex;
+  justify-content: space-between;
 }
-.information h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
+.information h2 {
+  color: white;
+}
+.newsletter p {
+  padding: 5px 0;
+  color: white;
 }
 .newsletterInput {
   border: none;
   border-radius: 7px;
   padding: 8px 10px;
-  width: 230px;
-  margin-right: 7px;
+  margin-right: 5px;
 }
 .information button {
-  background-color: #4542ff;
+  background-color: #222;
   color: white;
   padding: 8px 15px;
   border-radius: 7px;
@@ -417,16 +415,6 @@ footer a {
   }
   .information {
     margin-top: 3vh;
-  }
-
-  .information .left {
-    width: 100%;
-    padding: 30px;
-  }
-  .information .right {
-    width: 100%;
-    height: fit-content;
-    padding: 30px;
   }
   .information p {
     font-size: 0.9rem;
