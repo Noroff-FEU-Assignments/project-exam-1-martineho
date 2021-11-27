@@ -99,7 +99,7 @@ a.nav-link:hover {
 }
 .herotop h1 {
   margin: 0;
-  padding-top: 35vh;
+  padding-top: 33vh;
   font-size: 3.7rem;
   font-weight: 500;
   max-width: 800px;
@@ -108,30 +108,22 @@ a.nav-link:hover {
 .herotop p {
   font-size: 1.5rem;
   color: white;
-  margin: 20px 1px;
+  padding: 20px 1px;
+  margin-bottom: 20px;
   font-weight: 300;
 }
-.herotop p span a {
-  text-decoration: none;
+
+.cta {
   color: white;
-  font-style: normal;
-  font-weight: 400;
-}
-.herotop p span a:hover {
-  color: #ff9c8f;
-  transition: ease-in 0.1s;
-}
-.herotop .cta {
-  margin-top: 20px;
-  color: white;
-  font-size: 1rem;
-  padding: 8px 24px;
+  font-size: 0.9rem;
+  padding: 8px 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
+  text-decoration: none;
   background-color: #4542ff;
 }
-.herotop .cta:hover {
-  background-color: #4542ff75;
+.cta:hover {
+  background-color: #2c29f8;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: ease-in 0.1s;
@@ -265,9 +257,9 @@ h2 span a {
 .information p {
   color: #222222;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 400px;
-  margin-top: 20px;
+  margin: 10px 0 50px 0;
 }
 .information h3 {
   font-weight: 500;
