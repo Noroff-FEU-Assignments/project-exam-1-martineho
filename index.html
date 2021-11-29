@@ -1,117 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelcoco - Get your travel inspiration here</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Hotjar Tracking Code for https://travelcoco.netlify.app -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2721310,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2721310, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-</head>
-<body>
-
-
-
-<header>
-
-    <nav class="navbar">
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
         <a href="#" class="nav-logo">travelcoco</a>
 
         <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
 
-    <div class="hamburger">
+      <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-    </div>
+      </div>
+    </header>
 
-</header>
-    
     <main>
+      <div class="herotop">
+        <h1>Find inspiration for your next destination.</h1>
+        <p>Read traveller stories from around the world and get inspired.</p>
+        <a class="cta" href="blog.html">Read blogs</a>
+      </div>
 
-        <div class="herotop">
-            <h1>Find inspiration for your next destination.</h1>
-            <p>Read traveller stories from around the world and get inspired.</p>
-            <a class="cta" href="blog.html">Read blogs</a>
+      <header class="latestPosts">
+        <h2>Latest blog posts</h2>
+        <p>
+          <button type="button" value="left-arrow" id="left-button">
+            <img alt="left-arrow" width="32px" src="images/arrow_left.png" />
+          </button>
+          <button type="button" value="right-arrow" id="right-button">
+            <img alt="right-arrow" width="32px" src="images/arrow_right.png" />
+          </button>
+        </p>
+      </header>
+
+      <section id="#container" class="container">
+        <div class="slider"></div>
+      </section>
+
+      <section class="featured"></section>
+
+      <section class="information">
+        <div class="newsletter">
+          <form>
+            <label
+              ><h2>Wanna know when we post?</h2>
+              <p>Subscribe to our newsletter!</p></label
+            >
+            <div>
+              <input
+                class="newsletterInput"
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+              />
+              <button type="submit">Send</button>
+            </div>
+            <div class="form-error" id="emailError">
+              Please enter a valid email address
+            </div>
+          </form>
         </div>
-
-        <header class="latestPosts">
-            <h2>Latest posts</h2>
-            <p>
-                <button type="button" value="left-arrow" id="left-button">
-                    <img alt="left-arrow" width="32px" src="images/arrow_left.png">
-                </button>
-                <button type="button" value="right-arrow" id="right-button">
-                    <img alt="right-arrow" width="32px" src="images/arrow_right.png">
-                </button>
-            </p>
-        </header>
-
-        <section id="#container" class="container">
-            <div class="slider">
-            </div>
-        </section>
-
-        <section class="featured">
-
-        </section>
-
-        <section class="information">
-            <div class="newsletter">
-                <form>
-                    <label><h2>Wanna know when we post?</h2>
-                    <p>Subscribe to our newsletter!</p></label>
-                    <div>
-                    <input class="newsletterInput" type="email" id="email" placeholder="Enter Email">
-                    <button type="submit">Send</button>
-                </div>
-                    <div class="form-error" id="emailError">Please enter a valid email address</div>
-                </form> 
-            </div>
-        </section>
-
+      </section>
     </main>
 
-        <footer>
-            <div class="footer-menu">
-                <p>© 2021 Travelcoco</p>
-                <a href="">Cookies</a>
-                <a href="">Privacy</a>
-                <a href="">Terms</a>
-            </div>
+    <footer>
+      <div class="footer-menu">
+        <p>© 2021 Travelcoco</p>
+        <a href="">Cookies</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+      </div>
 
-            <a class="social-media">
-                <img alt="instagram icon" src="images/instagram-icon.svg">
-            </a>
-        </footer>
+      <a class="social-media">
+        <img alt="instagram icon" src="images/instagram-icon.svg" />
+      </a>
+    </footer>
 
-        <script src="js/navbar.js"></script>
-        <script src="js/slider.js"></script>
-    </body>
+    <script src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
 </html>

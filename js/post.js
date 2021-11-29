@@ -7,32 +7,30 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 if (id === null) {
-    location.href = "/";
+  location.href = "/";
 }
 
-const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
+const url =
+  "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
 const options = {};
 
 console.log(url);
 
-async function fetchPost(){
+async function fetchPost() {
+  try {
+    const response = await fetch(url, options);
 
-    try {
+    const result = await response.json();
 
-        const response = await fetch(url, options);
-    
-        const result = await response.json();
-    
-        console.log(result);
+    console.log(result);
 
-        const post = result;
+    const post = result;
 
-        document.title = `${post.title.rendered}` ;
+    document.title = `${post.title.rendered}`;
 
-        container.innerHTML = "";
-    
-        container.innerHTML += 
-        `
+    container.innerHTML = "";
+
+    container.innerHTML += `
             <header>
                 <div class="breadcrumbs">
                     <a href="blog.html">Go back to blog</a>
@@ -40,14 +38,14 @@ async function fetchPost(){
 
                 <h1>${post.title.rendered}</h1>
                     <div class="postDetails">
-                        <a>By <span>${post._embedded['author'][0].name}</span></a>
+                        <a>By <span>${post._embedded["author"][0].name}</span></a>
                         <a>Published <span>${post.date}</span></a>
-                        <a class="categoryTag" href="">${post._embedded['wp:term'][0][0].name}</a>
+                        <a class="categoryTag" href="">${post._embedded["wp:term"][0][0].name}</a>
                     </div>
             </header>
     
             <picture>
-            <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="featured-image"> 
+            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> 
             </picture>
 
             <div id="imgModal" class="modal">
@@ -63,14 +61,10 @@ async function fetchPost(){
                 <p>${post.content.rendered}</p>
             </section>
         `;
-
-        }   
-
-        catch (error) {
-            // console.log("An error occured");
-            // container.innerHTML = displayError("Ops... An error occured while fetching data...");
-        }
-    }
+  } catch (error) {
+    // console.log("An error occured");
+    // container.innerHTML = displayError("Ops... An error occured while fetching data...");
+  }
+}
 
 fetchPost();
-
