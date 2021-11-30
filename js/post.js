@@ -1,20 +1,16 @@
 const container = document.querySelector(".container");
-
 const queryString = document.location.search;
-
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
 
 if (id === null) {
   location.href = "/";
 }
 
-const url =
-  "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
+const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
 const options = {};
 
-console.log(url);
+// console.log(url);
 
 async function fetchPost() {
   try {
@@ -22,7 +18,7 @@ async function fetchPost() {
 
     const result = await response.json();
 
-    console.log(result);
+    // console.log(result);
 
     const post = result;
 
@@ -34,7 +30,7 @@ async function fetchPost() {
             <header>
                 <div class="breadcrumbs">
                     <a href="blog.html">Go back to blog</a>
-                </div>
+              </div>
 
                 <h1>${post.title.rendered}</h1>
                     <div class="postDetails">
