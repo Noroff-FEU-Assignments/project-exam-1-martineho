@@ -8,13 +8,14 @@ if (id === null) {
 }
 
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
+const corsUrl = "https://noroffcors.herokuapp.com/" + url;
 const options = {};
 
 // console.log(url);
 
 async function fetchPost() {
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(corsUrl, options);
 
     const result = await response.json();
 
