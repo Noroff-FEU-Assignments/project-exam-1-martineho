@@ -416,10 +416,21 @@ footer a {
   .information {
     margin-top: 3vh;
   }
+  .information .newsletter {
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .newsletter form {
+    display: block;
+    justify-content: space-between;
+  }
   .information p {
     font-size: 0.9rem;
   }
-  .information input {
+  .newsletterInput {
+    margin-top: 20px;
     width: 100%;
   }
   .information button {
