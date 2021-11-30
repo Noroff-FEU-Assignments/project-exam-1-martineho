@@ -47,20 +47,20 @@ async function fetchPost() {
             <picture>
             <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> 
             </picture>
-
-            <div id="imgModal" class="modal">
-
-                    <span class="close">&times;</span>
-
-                    <img class="modal-content" id="img01">
-
-                    <div id="caption"></div>
-            </div>
     
             <section class="text">
                 <p>${post.content.rendered}</p>
             </section>
+
+            <div id="modal-container" class="modal-container">
+             
+                <img class="modal-img" src="images/martine.jpg" alt="">
+
+                <div class="close">&times;</div>
+              
+            </div>
         `;
+      
   } catch (error) {
     // console.log("An error occured");
     // container.innerHTML = displayError("Ops... An error occured while fetching data...");
