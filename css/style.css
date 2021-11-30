@@ -126,8 +126,6 @@ a.nav-link:hover {
 }
 .cta:hover {
   background-color: #0b5df5;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   transition: ease-in 0.1s;
 }
 

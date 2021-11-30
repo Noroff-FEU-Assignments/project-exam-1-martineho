@@ -21,7 +21,7 @@ a.nav-link:hover {
 
 main header {
   height: auto;
-  background-color: #dbecd7;
+  background-color: #c5d9ff;
   padding-top: 25vh;
   padding-bottom: 11vh;
   padding-left: 5.5%;
@@ -83,7 +83,7 @@ main section {
   margin: 0;
 }
 .group .member a:hover {
-  color: #4542ff;
+  color: #246ef8;
 }
 
 .contact {
@@ -94,20 +94,18 @@ main section {
 }
 
 .contact p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .contact a {
   text-decoration: none;
-  font-weight: 500;
-  float: right;
-  color: #4542ff;
-}
-.contact a span {
-  color: #4542ff;
-  padding: 2px 5px;
-  font-size: 1.5rem;
   font-weight: 400;
-  margin: auto auto;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  background-color: #246ef8;
+}
+.contact a:hover {
+  background-color: #0b5df5;
 }
 
 h3 {

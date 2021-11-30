@@ -69,7 +69,7 @@ function generateHtml(posts, useLimit = false) {
 
 const categories = document.querySelector(".categories");
 
-categories.forEach(function (category) {
+categories.forEach (function (category) {
       category.onclick = function (event) {
             let newUrl;
 
