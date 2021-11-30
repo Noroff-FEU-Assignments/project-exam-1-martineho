@@ -49,8 +49,6 @@ async function fetchPost() {
             </section>
 
             <div id="modal-container" class="modal-container">
-             
-                <img class="modal-img" src="images/martine.jpg" alt="">
 
                 <div class="close">&times;</div>
               

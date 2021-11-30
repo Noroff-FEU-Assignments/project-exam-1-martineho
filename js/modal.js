@@ -1,4 +1,11 @@
-const modalContainer = document.querySelector(".modal-container");
+
+
+
+
+
+
+
+/* const modalContainer = document.querySelector(".modal-container");
 const close = document.querySelector(".close")
 const open = document.querySelector(".open");
 
@@ -9,3 +16,4 @@ open.addEventListener ('click', () => {
   close.addEventListener ('click', () => {
     modalContainer.classList.remove('show');
   })
+  */ 
