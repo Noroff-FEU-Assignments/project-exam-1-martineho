@@ -1,5 +1,5 @@
 body {
-  background-color: #f7f4f4;
+  background-color: #c5d9ff30;
   overflow-x: hidden;
 }
 a.nav-logo {
@@ -20,56 +20,59 @@ a.nav-link:hover {
   background-color: #222222;
 }
 
-header.contact {
-  height: auto;
-  text-align: center;
-  margin: auto auto;
+main {
+  display: flex;
+  margin: 0 10%;
+}
+
+.contact {
+  margin: 18vh 5vw;
+  padding: 0;
+  width: 50%;
+}
+.contact span {
+  color: #246ef8;
 }
 
 h1 {
-  padding-top: 5vh;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 3rem;
   font-weight: 500;
+  display: block;
 }
 p {
   font-size: 1.2rem;
-  max-width: 650px;
-  margin: auto auto;
   font-weight: 400;
+  color: #22222281;
 }
 .container {
   padding: 4% 2%;
-  margin: 10vh auto 0 auto;
-  max-width: 66%;
-  border-radius: 15px;
+  margin: 5vh 5vw;
+  border-radius: 20px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px #22222221;
-  justify-content: center;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.1);
 }
 #contactForm {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   padding: 0 5%;
+  width: 400px;
   justify-content: space-between;
 }
 label {
-  clear: both;
   width: 100%;
-  margin-top: 1.8rem;
-  font-size: 0.9rem;
-  color: rgb(104, 104, 112);
+  font-size: 1rem;
+  color: #222222c4;
+  font-weight: 500;
 }
 input {
   width: 100%;
-  margin-top: 0.8rem;
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 8px;
   font-size: 16px;
-  border: 2px solid rgb(222, 225, 228);
+  border: 1.5px solid rgb(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
 ::placeholder {
   font-size: 0.9rem;
 }
@@ -77,19 +80,10 @@ input {
   font-size: 0.9rem;
 }
 
-.nameInput,
-.emailInput {
-  width: 48%;
-}
-
-.subjectInput,
-.messageInput {
-  width: 100%;
-}
 textarea {
   width: 100%;
   padding: 10px;
-  border: 2px solid rgb(222, 225, 228);
+  border: 1.5px solid rgb(222, 225, 228);
   border-radius: 5px;
   resize: none;
   margin-top: 0.8rem;
@@ -100,18 +94,18 @@ textarea {
 }
 
 button {
-  background-color: #246ef8;
-  width: 150px;
-  padding: 0.6rem;
+  background-color: #222222;
+  width: 100%;
+  padding: 8px 16px;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  margin: 10px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 button:hover {
-  background-color: #0b5df5;
+  background-color: #222222e5;
 }
 @media (max-width: 768px) {
   .nameInput,

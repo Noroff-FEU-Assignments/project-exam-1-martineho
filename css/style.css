@@ -67,7 +67,7 @@ a.nav-link:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .hamburger {
@@ -101,7 +101,7 @@ a.nav-link:hover {
 }
 .herotop h1 {
   margin: 0;
-  padding-top: 20vh;
+  padding-top: 18vh;
   font-size: 3.5rem;
   font-weight: 500;
   max-width: 700px;
@@ -252,7 +252,7 @@ h2 span a {
   color: #222;
 }
 .newsletterInput {
-  border: none;
+  border: 1.5px solid white;
   border-radius: 7px;
   padding: 8px 10px;
   margin-right: 5px;
@@ -277,11 +277,11 @@ h2 span a {
 
 input:focus {
   outline: none;
-  border: 2px solid #246ef8;
+  border: 1.5px solid #246ef8;
 }
 textarea:focus {
   outline: none;
-  border: 2px solid #246ef8;
+  border: 1.5px solid #246ef8;
 }
 
 input:focus::placeholder {
