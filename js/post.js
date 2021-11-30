@@ -7,6 +7,7 @@ if (id === null) {
   location.href = "/";
 }
 
+
 const url = "http://martineho.com/travelcoco/wp-json/wp/v2/posts/" + id + "?_embed";
 const corsUrl = "https://noroffcors.herokuapp.com/" + url;
 const options = {};
@@ -48,12 +49,6 @@ async function fetchPost() {
             <section class="text">
                 <p>${post.content.rendered}</p>
             </section>
-
-            <div id="modal-container" class="modal-container">
-
-                <div class="close">&times;</div>
-              
-            </div>
         `;
       
   } catch (error) {
