@@ -318,7 +318,6 @@ footer a {
 
 @media (max-width: 768px) {
   header,
-  .information,
   footer {
     padding: 0 5%;
   }
@@ -369,7 +368,7 @@ footer a {
     left: 5vw;
   }
   .herotop {
-    height: 90vh;
+    height: 80vh;
     margin: 3vw;
   }
   .herotop h1 {
@@ -401,7 +400,7 @@ footer a {
     height: 30vh;
   }
   .information {
-    margin-top: 3vh;
+    margin: 3vh 3vw;
   }
   .information .newsletter {
     padding: 40px;
