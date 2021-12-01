@@ -86,7 +86,7 @@ a.nav-link:hover {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #222;
   border-radius: 20px;
 }
 
@@ -326,9 +326,6 @@ footer a {
   .navbar {
     min-height: 80px;
   }
-  a.nav-logo {
-    color: white;
-  }
   .hamburger {
     display: block;
   }
@@ -372,16 +369,19 @@ footer a {
   .nav-menu.active {
     left: 5vw;
   }
+  .herotop {
+    height: 70vh;
+  }
   .herotop h1 {
-    padding-top: 40vh;
-    font-size: 2.2rem;
+    padding-top: 25vh;
+    font-size: 2.5rem;
     font-weight: 500;
     max-width: 800px;
   }
   .herotop p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
-    margin: 10px 1px;
+    margin: 10px 1px 30px 1px;
     font-weight: 300;
   }
   .latestPosts {
@@ -437,9 +437,9 @@ footer a {
     gap: 25px;
     order: 2;
   }
-  footer div.social-media {
+  footer a.social-media {
     flex-direction: row;
-    margin: 20px auto 40px auto;
+    margin: 20px 0 50px 0;
   }
   footer p {
     order: 5;

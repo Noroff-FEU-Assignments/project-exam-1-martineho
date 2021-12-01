@@ -23,6 +23,7 @@ a.nav-link:hover {
 main {
   display: flex;
   margin: 0 10%;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -108,8 +109,18 @@ button:hover {
   background-color: #222222e5;
 }
 @media (max-width: 768px) {
-  .nameInput,
-  .emailInput {
+  main {
+    margin: 0 0;
+  }
+  .contact {
+    margin: 10vh 10vw 5vh 10vw;
+    padding: 0;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  #contactForm {
     width: 100%;
   }
 }
