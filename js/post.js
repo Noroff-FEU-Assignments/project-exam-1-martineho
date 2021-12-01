@@ -48,6 +48,8 @@ async function fetchPost() {
     function displayModal (){
       modal.style.display = "block";
     }
+    console.log(displayModal);
+    console.log(modal);
 
   
 }

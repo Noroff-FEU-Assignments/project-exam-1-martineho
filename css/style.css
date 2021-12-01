@@ -318,7 +318,6 @@ footer a {
 
 @media (max-width: 768px) {
   header,
-  .herotop,
   .information,
   footer {
     padding: 0 5%;
@@ -371,6 +370,8 @@ footer a {
   }
   .herotop {
     height: 70vh;
+    margin: 0;
+    border-radius: 0;
   }
   .herotop h1 {
     padding-top: 20vh;
