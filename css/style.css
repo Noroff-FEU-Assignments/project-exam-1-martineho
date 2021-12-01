@@ -400,7 +400,8 @@ footer a {
     height: 30vh;
   }
   .information {
-    margin: 3vh 3vw;
+    margin-top: 3vh;
+    padding: 0 3vw;
   }
   .information .newsletter {
     padding: 40px;
