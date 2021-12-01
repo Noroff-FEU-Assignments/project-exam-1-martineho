@@ -370,11 +370,11 @@ footer a {
     left: 5vw;
   }
   .herotop {
-    height: 80vh;
+    height: 65vh;
   }
   .herotop h1 {
     padding-top: 15vh;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     max-width: 800px;
   }
