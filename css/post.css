@@ -1,7 +1,4 @@
 @import url(/css/components/modal.css);
-* {
-  overflow-x: hidden;
-}
 body {
   padding: 0%;
   margin: 0;
@@ -25,34 +22,31 @@ a.nav-link:hover {
   background-color: #222222;
 }
 
-.breadcrumbs {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-.breadcrumbs a {
+.back-link {
   font-size: 1rem;
   text-decoration: none;
   color: #4542ff;
-}
-.featured-image {
-  height: 70vh;
-  border-radius: 20px;
+  display: block;
+  margin-left: 10vw;
+  margin-bottom: 3vh;
 }
 
 h1 {
   padding: 0;
   margin-bottom: 15px;
   margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 3rem;
   font-weight: 500;
-  max-width: 800px;
   color: #222;
+  max-width: 1000px;
 }
 
 .postDetails {
   margin-left: -15px;
   margin-top: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
 }
 
 .postDetails a {
@@ -78,36 +72,53 @@ a.categoryTag {
   font-size: 0.9rem;
   border-right: none;
 }
-.container {
-  width: 100vw;
-  margin: 5vh 10vw;
-  max-width: 1000px;
+.featured-media {
+  text-align: center;
+  margin-top: 8vh;
 }
-.wp-block-image img {
-  border-radius: 15px;
+.featured-image {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+}
+.container {
+  margin: 3vh auto;
+  max-width: 800px;
+}
+h2 {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.ingress {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+p {
+  font-weight: 400;
+  max-width: 800px;
+  padding: 15px 0;
+  margin: auto auto;
 }
 figcaption {
   font-size: 0.9rem;
-  color: #222222;
+  color: rgb(131, 131, 131);
   font-weight: 300;
-  text-align: center;
   padding: 5px;
+  margin-top: -4vh;
 }
 .wp-block-quote p {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.text {
-  margin: 5% 10%;
-}
-.text p {
+figure img {
+  max-width: 800px;
+  border-radius: 20px;
   margin: 5vh 0;
-  font-weight: 400;
 }
-
-.modal {
-  display: none;
-  position: fixed;
+figure img:hover {
+  opacity: 0.9;
+  transition: 0.2s ease-in-out;
 }
 .loader {
   margin: 5vh auto 20vh auto;
@@ -129,15 +140,11 @@ figcaption {
 }
 
 @media (max-width: 900px) {
-  .wp-block-image img {
-    width: 550px;
-  }
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 2.2rem;
-    margin-top: 5vh;
   }
   .postDetails {
     margin-left: 0px;
@@ -154,19 +161,5 @@ figcaption {
   a.categoryTag {
     padding: 5px 10px;
     width: fit-content;
-  }
-  main header {
-    margin: 0 5vw;
-  }
-  .container {
-    width: 100vw;
-  }
-  .featured-image {
-    width: 100vw;
-    margin: 0;
-    border-radius: 0;
-  }
-  .wp-block-image img {
-    width: 80vw;
   }
 }
