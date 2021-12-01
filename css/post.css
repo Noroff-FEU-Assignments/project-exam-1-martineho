@@ -140,6 +140,9 @@ figure img:hover {
 }
 
 @media (max-width: 900px) {
+  .container {
+    margin: 3vh 5vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -157,9 +160,5 @@ figure img:hover {
     margin: 15px 2px;
     padding: 0;
     border: none;
-  }
-  a.categoryTag {
-    padding: 5px 10px;
-    width: fit-content;
   }
 }
