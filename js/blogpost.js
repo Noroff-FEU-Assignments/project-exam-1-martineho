@@ -1,4 +1,6 @@
-const content = document.querySelector(".post-content");
+const content = document.querySelector(".container");
+const header = document.querySelector(".post-header");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -26,26 +28,19 @@ async function fetchPost() {
 
     document.title = `${post.title.rendered}`;
 
-    content.innerHTML = "";
+    header.innerHTML = `<h1>${post.title.rendered}</h1>
+                          <div class="postDetails">
+                              <a>By <span>${post._embedded["author"][0].name}</span></a>
+                              <a>Published <span>${post.date}</span></a>
+                              <a class="categoryTag" href="">${post._embedded["wp:term"][0][0].name}</a>
+                          </div>
 
-    content.innerHTML += `
-  
-            <header>
-                <div class="breadcrumbs">
-                    <a href="blog.html">Go back to blog</a>
-              </div>
+                          <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> `;
 
-                <h1>${post.title.rendered}</h1>
-                    <div class="postDetails">
-                        <a>By <span>${post._embedded["author"][0].name}</span></a>
-                        <a>Published <span>${post.date}</span></a>
-                        <a class="categoryTag" href="">${post._embedded["wp:term"][0][0].name}</a>
-                    </div>
 
-                <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> 
-            </header>
-    
-    
+    container.innerHTML = "";
+    container.innerHTML += `
+
             <section class="text">
                 <p>${post.content.rendered}</p>
             </section>

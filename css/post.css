@@ -1,4 +1,7 @@
 @import url(/css/components/modal.css);
+* {
+  overflow-x: hidden;
+}
 body {
   padding: 0%;
   margin: 0;
@@ -30,6 +33,10 @@ a.nav-link:hover {
   font-size: 1rem;
   text-decoration: none;
   color: #4542ff;
+}
+.featured-image {
+  height: 70vh;
+  border-radius: 20px;
 }
 
 h1 {
@@ -71,19 +78,10 @@ a.categoryTag {
   font-size: 0.9rem;
   border-right: none;
 }
-
-main {
-  margin: 3% 0;
-}
 .container {
-  width: 75vw;
+  width: 100vw;
+  margin: 5vh 10vw;
   max-width: 1000px;
-  margin: auto auto;
-}
-.featured-image {
-  margin: 0px 10%;
-  width: 60vw;
-  border-radius: 15px;
 }
 .wp-block-image img {
   border-radius: 15px;
