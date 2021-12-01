@@ -24,15 +24,16 @@ async function fetchPost() {
 
     document.title = `${post.title.rendered}`;
 
-    featured.innerHTML += ` <h1>${post.title.rendered}</h1>
+    featured.innerHTML += ` 
+    <h1>${post.title.rendered}</h1>
 
                             <div class="postDetails">
                                   <a>By <span>${post._embedded["author"][0].name}</span></a>
                                     <a>Published <span>${post.date}</span></a>
                                   <a class="categoryTag" href="">${post._embedded["wp:term"][0][0].name}</a>
                             </div>
-                            
-                            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> `;
+                            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" class="featured-image"> 
+                            `;
 
     container.innerHTML = "";
     container.innerHTML += `${post.content.rendered}`;
@@ -41,19 +42,24 @@ async function fetchPost() {
                         <img class="modal-content" id="modal-img">
                         <div id="caption"></div>`;
 
-    // var img = document.querySelectorAll('figure img');  
-    //img.addEventListener("click", displayModal);
-    document.querySelectorAll(".img").onClick = displayModal;
-    
-    function displayModal (){
-      modal.style.display = "block";
-    }
-    console.log(displayModal);
-    console.log(modal);
 
-  
-}
+} 
 
 fetchPost();
 
+/*
+var img = document.querySelectorAll('figure img');  
+img.addEventListener("click", displayModal);
 
+
+document.querySelector(".img").onClick = displayModal;
+
+
+function displayModal () {
+
+  console.log("displayModal has triggered");
+  modal.style.display = "block";
+}
+
+console.log(modal);
+*/ 
