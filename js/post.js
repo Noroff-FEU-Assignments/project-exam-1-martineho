@@ -62,6 +62,7 @@ async function fetchPost() {
 
     for (var i = 0; i < imageList.length; i++) {
       const modalImage = imageList.src;
+      const imgCaption = imageList.
       imageList[i].addEventListener("click", function() {
         displayModal();
     })
