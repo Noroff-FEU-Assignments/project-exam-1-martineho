@@ -21,7 +21,7 @@ a.nav-link:hover {
 }
 header.blog {
   padding: 0;
-  margin: 5vh 0 5vh 0;
+  margin: 3vh 0 3vh 0;
   width: 100%;
 }
 main {
@@ -33,7 +33,7 @@ main {
 }
 h1 {
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 h3 {
@@ -44,13 +44,11 @@ h3 {
 .categories {
   width: 12vw;
   border-radius: 15px;
-  padding: 30px;
   float: left;
-  border: solid 2px #c5d9ff70;
   height: fit-content;
 }
 .categories .category {
-  margin: 10px -16px;
+  margin: 10px -10px;
   font-size: 1rem;
   padding: 6px 16px;
   font-weight: 400;
@@ -61,11 +59,23 @@ h3 {
   color: #22222281;
   display: block;
 }
-.categories .category:hover {
-  background-color: #c5d9ff70;
+.category span {
+  display: none;
+  padding-right: 5px;
+}
+.categories .category:hover,
+.category:focus {
   color: #246ef8;
   margin: 10px 0px;
   transition: 0.3s ease;
+}
+.categories .category:hover span {
+  display: inline-block;
+  color: #246ef8;
+}
+.categories .category:focus span {
+  display: inline-block;
+  color: #246ef8;
 }
 
 .container {
