@@ -21,7 +21,7 @@ a.nav-link:hover {
 
 main header {
   height: auto;
-  background-color: #c5d9ff;
+  background-color: #d3e2ff;
   padding-top: 20vh;
   padding-bottom: 11vh;
   padding-left: 5.5%;
@@ -83,7 +83,7 @@ main section {
   margin: 0;
 }
 .group .member a:hover {
-  color: #246ef8;
+  color: #c23e46;
 }
 
 .contact {
@@ -101,11 +101,11 @@ main section {
   font-weight: 400;
   padding: 8px 16px;
   border-radius: 20px;
-  color: white;
-  background-color: #246ef8;
+  color: #222222;
+  background-color: #fe4e5b;
 }
 .contact a:hover {
-  background-color: #0b5df5;
+  background-color: rgb(255, 109, 119);
 }
 
 h3 {

@@ -45,12 +45,12 @@ a.nav-link {
   border-radius: 20px;
 }
 a.nav-link.active {
-  background-color: #c5d9ff70;
-  color: #246ef8;
+  background-color: #fe4e5b30;
+  color: #222222;
 }
 a.nav-link:hover {
-  color: #246ef8;
-  background-color: #c5d9ff70;
+  color: #222222;
+  background-color: #fe4e5b30;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: 0.2s ease;
@@ -116,16 +116,16 @@ a.nav-link:hover {
 }
 
 .cta {
-  color: white;
+  color: #222222;
   font-size: 1rem;
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
   text-decoration: none;
-  background-color: #246ef8;
+  background-color: #fe4e5b;
 }
 .cta:hover {
-  background-color: #0b5df5;
+  background-color: rgb(255, 109, 119);
   transition: ease-in 0.1s;
 }
 
@@ -162,7 +162,7 @@ h2 span a {
   padding: 5px;
 }
 .latestPosts p button img:hover {
-  background-color: rgb(221, 227, 255);
+  background-color: #ff554130;
 }
 .slider {
   margin: 10px 10% 10px 10%;
@@ -210,7 +210,7 @@ h2 span a {
   font-size: 0.9rem;
 }
 .title div {
-  color: #246ef8;
+  color: #fe4e5b;
   transition: 0.2s ease;
   display: none;
   margin-right: 5px;
@@ -229,7 +229,7 @@ h2 span a {
   justify-content: space-between;
 }
 .information .newsletter {
-  background-color: #c5d9ff;
+  background-color: #fe4e5b10;
   border-radius: 15px;
   padding: 50px 50px;
   height: fit-content;
@@ -252,20 +252,20 @@ h2 span a {
 }
 .newsletterInput {
   border: 1.5px solid white;
-  border-radius: 7px;
+  border-radius: 20px;
   padding: 8px 10px;
   margin-right: 5px;
 }
 .information button {
-  background-color: #246ef8;
-  color: white;
+  background-color: #fe4e5b;
+  color: #222222;
   padding: 8px 15px;
-  border-radius: 7px;
+  border-radius: 20px;
   border: none;
   font-weight: 400;
 }
 .information button:hover {
-  background-color: #0b5df5;
+  background-color: rgb(255, 109, 119);
 }
 .form-error {
   display: none;
@@ -276,11 +276,11 @@ h2 span a {
 
 input:focus {
   outline: none;
-  border: 1.5px solid #246ef8;
+  border: 1.5px solid #fe4e5b;
 }
 textarea:focus {
   outline: none;
-  border: 1.5px solid #246ef8;
+  border: 1.5px solid #fe4e5b;
 }
 
 input:focus::placeholder {
@@ -358,7 +358,7 @@ footer a {
   }
   a.nav-link.active {
     border-bottom: none;
-    color: #246ef8;
+    color: #fe4e5b;
   }
   a.nav-link:hover {
     color: #222222;

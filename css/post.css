@@ -25,7 +25,7 @@ a.nav-link:hover {
 .back-link {
   font-size: 1rem;
   text-decoration: none;
-  color: #4542ff;
+  color: #c23e46;
   display: block;
   margin-left: 10vw;
   margin-bottom: 3vh;
@@ -64,7 +64,7 @@ h1 {
   font-weight: 300;
 }
 a.categoryTag {
-  color: #4542ff;
+  color: #c23e46;
   padding: 5px 10px;
   font-weight: 400;
   text-decoration: none;
@@ -95,7 +95,7 @@ h2 {
   font-size: 1.2rem;
   font-weight: 500;
 }
-p {
+.container p {
   font-weight: 400;
   max-width: 800px;
   padding: 15px 0;

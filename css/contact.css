@@ -1,5 +1,5 @@
 body {
-  background-color: #c5d9ff30;
+  background-color: white;
   overflow-x: hidden;
 }
 a.nav-logo {
@@ -27,12 +27,14 @@ main {
 }
 
 .contact {
-  margin: 18vh 5vw;
-  padding: 0;
-  width: 40%;
+  margin-top: 3vh;
+  padding: 10%;
+  border-radius: 20px;
+  width: 50%;
+  height: fit-content;
 }
 .contact span {
-  color: #246ef8;
+  color: #fe4e5b;
 }
 
 h1 {
@@ -49,10 +51,9 @@ p {
 .container {
   width: 40%;
   padding: 4% 2%;
-  margin: 5vh 0vw;
+  margin-top: 1vh;
+  margin-left: 5vw;
   border-radius: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.1);
 }
 #contactForm {
   gap: 20px;
@@ -61,18 +62,18 @@ p {
 }
 label {
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #222222c4;
-  font-weight: 500;
+  font-weight: 400;
 }
 input {
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 8px;
+  margin-bottom: 10px;
+  padding: 8px 10px;
   font-size: 16px;
   border: 1.5px solid rgb(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 20px;
 }
 ::placeholder {
   font-size: 0.9rem;
@@ -85,7 +86,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1.5px solid rgb(222, 225, 228);
-  border-radius: 5px;
+  border-radius: 20px;
   resize: none;
   margin-top: 0.8rem;
 }
@@ -95,18 +96,18 @@ textarea {
 }
 
 button {
-  background-color: #222222;
+  background-color: #fe4e5b;
   width: 100%;
   padding: 8px 16px;
-  color: white;
-  border-radius: 10px;
+  color: #222222;
+  border-radius: 20px;
   border: none;
   font-size: 1rem;
   cursor: pointer;
   margin: 20px auto 0 auto;
 }
 button:hover {
-  background-color: #222222e5;
+  background-color: rgb(255, 109, 119);
 }
 @media (max-width: 768px) {
   main {
