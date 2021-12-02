@@ -49,10 +49,13 @@ async function fetchPost() {
     document.querySelector(".img").onclick = displayModal;
     const img = document.querySelector(".modal-img");
     const modalContent = document.querySelector(".modal-content")
+    const imgCap = document.querySelector(".caption")
+    const figcaption = document.querySelector("figcaption");
 
     function displayModal () {
       modal.style.display = "block";
       modalContent.src = img.src;
+      imgCap.innerHTML = figcaption.innerText;
     }
 
     modal.onclick = function() {

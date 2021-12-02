@@ -128,6 +128,14 @@ figure .modal-img:hover {
 .modal-img {
   border-radius: 20px;
 }
+.caption {
+  color: white;
+  width: 65%;
+  margin: 0 17.5%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
 .loader {
   margin: 5vh auto 20vh auto;
   border: 15px solid #dfe5ff;
