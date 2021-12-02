@@ -45,42 +45,51 @@ async function fetchPost() {
                         <div class="caption"></div>`;
 
                       
+                
+                
+    // const image = document.querySelector(".img"); THIS NEEDS TO BE WRAPPED IN A BUTTON
 
-    document.querySelector(".img").onclick = displayModal;
+    // document.querySelector(".img").onclick = displayModal;
+
+    const imageList = document.querySelectorAll(".img");
+    console.log(imageList);
+
     const img = document.querySelector(".modal-img");
     const modalContent = document.querySelector(".modal-content")
     const imgCap = document.querySelector(".caption")
     const figcaption = document.querySelector("figcaption");
 
+
+    for (var i = 0; i < imageList.length; i++) {
+      const modalImage = imageList.src;
+      imageList[i].addEventListener("click", function() {
+        displayModal();
+    })
     function displayModal () {
       modal.style.display = "block";
-      modalContent.src = img.src;
+      modalContent.src = modalImage;
       imgCap.innerHTML = figcaption.innerText;
-    }
-
-    modal.onclick = function() {
-      modal.style.display = "none";
-    } 
-
+      }
+    
+      modal.onclick = function() {
+        modal.style.display = "none";
+      } 
+  } 
 
 } 
 
 fetchPost();
 
 
+
 /*
-var img = document.querySelectorAll('figure img');  
-img.addEventListener("click", displayModal);
-
-
-document.querySelector(".img").onClick = displayModal;
-
-
 function displayModal () {
-
-  console.log("displayModal has triggered");
-  modal.style.display = "block";
+  for (var i = 0; i < image.length; i++) {
+      image.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalContent.src = image.src;
+      imgCap.innerHTML = figcaption.innerText;
+    })
+  }
 }
-
-console.log(modal);
-*/ 
+*/
