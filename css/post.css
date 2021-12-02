@@ -106,20 +106,27 @@ figcaption {
   color: rgb(131, 131, 131);
   font-weight: 300;
   padding: 5px;
-  margin-top: -4vh;
+  margin-top: 0;
+  width: 100%;
 }
 .wp-block-quote p {
   font-size: 1.2rem;
   font-weight: 500;
 }
-figure img {
+figure .modal-img {
   max-width: 800px;
+  margin-top: 5vh;
+  background-color: transparent;
+  border: none;
+  outline-style: none;
   border-radius: 20px;
-  margin: 5vh 0;
 }
-figure img:hover {
-  opacity: 0.9;
+figure .modal-img:hover {
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
+}
+.modal-img {
+  border-radius: 20px;
 }
 .loader {
   margin: 5vh auto 20vh auto;

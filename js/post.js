@@ -13,6 +13,7 @@ const options = {};
 const container = document.querySelector(".container");
 const featured = document.querySelector(".featured-media");
 const modal = document.querySelector(".modal-container");
+const title = document.querySelector("title");
 // console.log(url);
 
 async function fetchPost() {
@@ -23,6 +24,7 @@ async function fetchPost() {
     const post = result;
 
     document.title = `${post.title.rendered}`;
+    title.innerHTML = `${post.title.rendered}`;
 
     featured.innerHTML += ` 
     <h1>${post.title.rendered}</h1>
@@ -39,13 +41,29 @@ async function fetchPost() {
     container.innerHTML += `${post.content.rendered}`;
 
     modal.innerHTML += `<span class="close">&times;</span>
-                        <img class="modal-content" id="modal-img">
-                        <div id="caption"></div>`;
+                        <img src="" class="modal-content" id="modal-img">
+                        <div class="caption"></div>`;
+
+                      
+
+    document.querySelector(".img").onclick = displayModal;
+    const img = document.querySelector(".modal-img");
+    const modalContent = document.querySelector(".modal-content")
+
+    function displayModal () {
+      modal.style.display = "block";
+      modalContent.src = img.src;
+    }
+
+    modal.onclick = function() {
+      modal.style.display = "none";
+    } 
 
 
 } 
 
 fetchPost();
+
 
 /*
 var img = document.querySelectorAll('figure img');  

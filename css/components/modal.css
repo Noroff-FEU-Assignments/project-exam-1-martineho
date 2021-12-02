@@ -10,17 +10,18 @@
   height: 100vw;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.8);
   cursor: pointer;
 }
 #modal-img {
   background-color: white;
   border-radius: 20px;
-  width: 800px;
-  height: 500px;
+  width: 70%;
   max-width: 100%;
-  margin-top: 20vh;
+  margin: 5% 15%;
+  transition: 0.3s ease-in;
 }
+
 .close {
   font-size: 4rem;
   font-weight: 300;
