@@ -151,19 +151,28 @@ figure .modal-img:hover {
   .back-link {
     margin-left: 5vw;
   }
+  .featured-media {
+    padding: 0 3%;
+  }
   .featured-image {
     object-fit: cover;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     border-radius: 20px;
   }
   .container {
-    margin: 3vh 5vw;
+    margin: 1vh 3%;
+  }
+  .container p,
+  h2 {
+    margin: 0 2%;
+  }
+  .ingress {
+    font-size: 1rem;
+    font-weight: 500;
   }
   figure img {
     width: 100%;
-    border-radius: 20px;
-    margin: 5vh 0;
   }
 }
 
