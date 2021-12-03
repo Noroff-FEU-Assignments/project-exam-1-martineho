@@ -382,7 +382,7 @@ footer a {
   }
   .nav-menu {
     position: fixed;
-    left: -90%;
+    left: -103%;
     top: 80px;
     gap: 0;
     flex-direction: column;
