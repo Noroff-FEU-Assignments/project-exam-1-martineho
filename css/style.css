@@ -334,8 +334,6 @@ footer a {
   .slider {
     margin: 0 5% 0 5%;
     overflow-x: scroll;
-    gap: 20px;
-    height: 45vh;
   }
   .information .newsletter {
     padding: 40px;
@@ -428,6 +426,11 @@ footer a {
   }
   h2 {
     font-size: 1.2rem;
+  }
+  .slider {
+    margin: 0 5% 0 5%;
+    gap: 20px;
+    height: 45vh;
   }
   .slider .item {
     min-width: 90vw;
