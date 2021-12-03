@@ -20,61 +20,90 @@ a.nav-link:hover {
   background-color: #222222;
 }
 header.blog {
-  margin-top: 5vh;
-  margin-bottom: 3vh;
+  padding: 0;
+  margin: 3vh 0 3vh 0;
+  width: 100%;
+}
+main {
+  padding: 0 10%;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 h1 {
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
-.blog .categories {
-  margin-top: 2rem;
+h3 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 500;
 }
-.blog .categories .category {
-  font-size: 0.9rem;
-  padding: 6px 16px;
+.categories {
+  width: 12vw;
+  border-radius: 15px;
+  float: left;
+  height: fit-content;
+}
+.categories .category {
+  margin: 10px -10px;
+  font-size: 1rem;
+  padding: 6px 10px;
   font-weight: 400;
   outline: none;
   border: none;
   border-radius: 20px;
   background-color: transparent;
   color: #22222281;
+  display: block;
 }
-.blog .categories .category:hover {
-  background-color: #c5d9ff70;
-  color: #246ef8;
+.category span {
+  display: none;
+  padding-right: 5px;
+}
+.categories .category:hover,
+.category:focus {
+  color: #c23e46;
+  margin: 10px 0px;
+  transition: 0.3s ease;
+}
+.categories .category:hover span {
+  display: inline-block;
+  color: #c23e46;
+}
+.categories .category:focus span {
+  display: inline-block;
+  color: #c23e46;
 }
 
 .container {
-  margin: 0px 10% 10px 10%;
-  padding-bottom: 5px;
+  float: right;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 34px;
-  row-gap: 30px;
+  gap: 30px;
+  row-gap: 10px;
+  width: 65vw;
 }
 
 .container .item {
   border-radius: 10px;
   height: 300px;
-  min-width: 360px;
-  max-width: 360px;
+  width: 20vw;
   margin: 0 1px 0px 0;
   padding-bottom: 20px;
   text-decoration: none;
 }
 
 .container .item img {
-  width: 360px;
-  height: 220px;
-  border-radius: 10px;
+  width: 20vw;
+  height: 25vh;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
 .item .title {
@@ -87,7 +116,6 @@ h1 {
   color: #222;
 }
 button.more-button {
-  position: absolute;
   color: #22222281;
   font-weight: 400;
   font-size: 0.9rem;
@@ -112,11 +140,11 @@ footer {
 
 .loader {
   margin: 5vh auto 20vh auto;
-  border: 15px solid #246ef820;
-  border-top: 15px solid #246ef8;
+  border: 15px solid #fe4e5b30;
+  border-top: 15px solid #fe4e5b;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   animation: spin 2.5s linear infinite;
 }
 
