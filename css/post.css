@@ -113,7 +113,7 @@ figcaption {
   font-size: 1.2rem;
   font-weight: 500;
 }
-figure .modal-img {
+figure img {
   max-width: 800px;
   margin-top: 5vh;
   background-color: transparent;
@@ -121,11 +121,11 @@ figure .modal-img {
   outline-style: none;
   border-radius: 20px;
 }
-figure .modal-img:hover {
+figure img:hover {
   opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
-.modal-img {
+img {
   border-radius: 20px;
 }
 .caption {
