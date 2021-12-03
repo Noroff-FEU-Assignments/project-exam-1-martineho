@@ -318,11 +318,12 @@ footer a {
 
 @media (max-width: 850px) {
   .herotop {
-    height: 60vh;
+    height: 50vh;
     margin: 3vw;
   }
   .herotop h1 {
     padding-top: 20vh;
+    font-size: 3rem;
   }
   .herotop p {
     font-size: 1.2rem;
