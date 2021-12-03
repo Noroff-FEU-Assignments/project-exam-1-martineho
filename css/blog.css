@@ -177,7 +177,7 @@ footer {
 
 @media (max-width: 768px) {
   main {
-    padding: 0 3%;
+    padding: 0 5%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -226,7 +226,7 @@ footer {
   }
   .container .item {
     display: block;
-    height: 300px;
+    height: 350px;
     width: 100%;
     padding-bottom: 0px;
   }
