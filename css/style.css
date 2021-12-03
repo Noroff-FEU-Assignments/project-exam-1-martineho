@@ -263,6 +263,7 @@ h2 span a {
   border-radius: 20px;
   border: none;
   font-weight: 400;
+  font-size: 1rem;
 }
 .information button:hover {
   background-color: rgb(255, 109, 119);
@@ -359,7 +360,6 @@ footer a {
   }
   .information button {
     margin-top: 20px;
-    font-size: 1rem;
   }
 }
 

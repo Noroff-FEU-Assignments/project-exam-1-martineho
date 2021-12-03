@@ -158,17 +158,17 @@ footer {
 }
 
 @media (max-width: 850px) {
+  main {
+    padding: 0 5%;
+  }
   .container .item {
     border-radius: 10px;
     height: 300px;
-    width: 50vw;
-    margin: 0 1px 0px 0;
-    padding-bottom: 20px;
-    text-decoration: none;
+    width: 60vw;
   }
 
   .container .item img {
-    width: 50vw;
+    width: 60vw;
     height: 230px;
     border-radius: 15px;
     object-fit: cover;
