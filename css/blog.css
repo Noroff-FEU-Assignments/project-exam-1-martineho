@@ -158,9 +158,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-  main {
-    padding: 0 5%;
-  }
   .container .item {
     border-radius: 10px;
     height: 300px;
