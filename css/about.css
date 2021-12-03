@@ -121,7 +121,16 @@ h3 {
   main header {
     height: auto;
     margin: 0 3vw;
-    border-radius: 20px;
+    padding: 5%;
+  }
+  main section {
+    margin: 5% 5%;
+  }
+  .team {
+    width: 50%;
+  }
+  .contact {
+    width: 50%;
   }
 }
 
@@ -132,8 +141,6 @@ h3 {
   main header {
     padding: 10vh 10vw;
     height: auto;
-    margin: 0 3vw;
-    border-radius: 20px;
     text-align: center;
   }
   .text p {
