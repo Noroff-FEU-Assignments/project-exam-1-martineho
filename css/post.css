@@ -124,7 +124,7 @@ figure img {
 }
 figure img:hover {
   opacity: 0.8;
-  transition: 0.2s ease-in-out;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.1);
 }
 img {
   border-radius: 20px;
