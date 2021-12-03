@@ -119,17 +119,22 @@ h3 {
     font-size: 3rem;
   }
   main header {
-    padding: 10vh 10vw;
     height: auto;
     margin: 0 3vw;
     border-radius: 20px;
-    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 2.2rem;
+  }
+  main header {
+    padding: 10vh 10vw;
+    height: auto;
+    margin: 0 3vw;
+    border-radius: 20px;
+    text-align: center;
   }
   .text p {
     font-size: 1rem;
