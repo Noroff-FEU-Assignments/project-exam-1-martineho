@@ -316,6 +316,39 @@ footer a {
   padding: 5px 2px;
 }
 
+@media (max-width: 850px) {
+  .herotop {
+    height: 60vh;
+    margin: 3vw;
+  }
+  .herotop h1 {
+    padding-top: 20vh;
+  }
+  .herotop p {
+    font-size: 1.2rem;
+  }
+  .information .newsletter {
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .newsletter form {
+    display: block;
+    justify-content: space-between;
+  }
+  .information p {
+    font-size: 0.9rem;
+  }
+  .newsletterInput {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .information button {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   header,
   footer {
@@ -412,24 +445,6 @@ footer a {
     margin: auto;
     text-align: center;
   }
-  .newsletter form {
-    display: block;
-    justify-content: space-between;
-  }
-  .information p {
-    font-size: 0.9rem;
-  }
-  .newsletterInput {
-    margin-top: 20px;
-    width: 100%;
-  }
-  .information button {
-    margin-top: 20px;
-  }
-  input:focus::placeholder {
-    font-size: 0.9rem;
-  }
-
   footer {
     flex-direction: column;
     margin: 5vh 5vw;
