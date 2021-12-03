@@ -53,7 +53,7 @@
             <form id="contactForm">
                 <div class="nameInput">
                     <label>
-                        Name
+                        <div class="label">Name</div>
                         <input name="yourName" id="yourName" placeholder="Your name">
                     </label>
                     <div class="form-error" id="yourNameError">Please enter your name, must be more than 5 characters.
@@ -62,7 +62,7 @@
 
                 <div class="emailInput">
                     <label>
-                        Email
+                        <div class="label">Email</div>
                         <input name="email" id="email" placeholder="email@example.com">
                     </label>
                     <div class="form-error" id="emailError">Please enter a valid email address</div>
@@ -70,7 +70,7 @@
 
                 <div class="subjectInput">
                     <label>
-                        Subject
+                        <div class="label">Subject</div>
                         <input name="subject" id="subject" placeholder="Write your subject...">
                     </label>
                     <div class="form-error" id="subjectError">The subject must at least be 15 characters</div>
@@ -78,9 +78,9 @@
 
                 <div class="messageInput">
                     <label>
-                        Message
+                        <div class="label">Message</div>
+                        <textarea name="message" id="message" placeholder="Write your message..." rows="4"></textarea>
                     </label>
-                    <textarea name="message" id="message" placeholder="Write your message..." rows="4"></textarea>
                     <div class="form-error" id="messageError">The message must at least be 25 characters</div>
                 </div>
 

@@ -60,9 +60,9 @@ p {
   padding: 0 5%;
   justify-content: space-between;
 }
-label {
+.label {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #222222c4;
   font-weight: 400;
 }
