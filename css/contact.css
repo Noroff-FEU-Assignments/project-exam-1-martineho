@@ -24,13 +24,14 @@ main {
   display: flex;
   margin: 0 10%;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact {
-  margin-top: 3vh;
-  padding: 5% 0;
+  margin-top: 8vh;
+  padding: 0% 5%;
   border-radius: 20px;
-  width: 50%;
+  width: 40%;
   height: fit-content;
 }
 .contact span {
@@ -49,16 +50,15 @@ p {
   color: #22222281;
 }
 .container {
-  width: 40%;
-  padding: 4% 2%;
-  margin-top: 1vh;
-  margin-left: 5vw;
+  width: 50%;
+  margin-top: 5vh;
   border-radius: 20px;
 }
 #contactForm {
   gap: 20px;
   padding: 0 5%;
   justify-content: space-between;
+  max-width: 500px;
 }
 .label {
   width: 100%;
