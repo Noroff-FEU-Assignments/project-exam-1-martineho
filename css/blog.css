@@ -198,24 +198,25 @@ footer {
   }
   .categories {
     width: 100vw;
-    border: solid 1.5px #fe4e5b30;
-    margin: 0 -5vw;
-    padding: 0 5vw;
   }
   .category-list {
     display: flex;
     justify-content: space-between;
   }
   .categories .category {
-    margin: 10px 5px;
+    margin: 10px 0px;
     font-size: 1rem;
-    padding: 6px 10px;
+    padding: 6px 14px;
+    border: solid 2px #fbeaea;
   }
-  .categories .category:hover,
-  .category:focus {
-    color: #c23e46;
+  .categories .category:hover {
+    color: #222222;
+    background-color: #fbeaea;
   }
-  .categories .category span {
+  .categories .category:hover span {
+    display: none;
+  }
+  .categories .category:focus span {
     display: none;
   }
   .container {
