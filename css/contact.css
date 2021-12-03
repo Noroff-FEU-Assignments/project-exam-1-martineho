@@ -109,6 +109,20 @@ button {
 button:hover {
   background-color: rgb(255, 109, 119);
 }
+
+@media (max-width: 850px) {
+  .contact {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    padding: 5% 10%;
+  }
+}
 @media (max-width: 768px) {
   main {
     margin: 0 0;
