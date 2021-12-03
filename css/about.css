@@ -127,10 +127,17 @@ h3 {
     margin: 5% 5%;
   }
   .team {
-    width: 40%;
+    width: 100%;
+  }
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding-top: 5%;
   }
   .contact {
-    width: 40%;
+    width: 100%;
   }
 }
 
