@@ -116,7 +116,7 @@ figcaption {
 figure img {
   max-width: 800px;
   margin-top: 5vh;
-  height: fit-content;
+  height: auto;
   background-color: transparent;
   border: none;
   outline-style: none;
@@ -182,7 +182,7 @@ img {
   }
   figure img {
     width: 100%;
-    height: fit-content;
+    height: auto;
   }
 }
 
