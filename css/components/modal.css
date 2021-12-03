@@ -16,7 +16,7 @@
 #modal-img {
   border-radius: 20px;
   width: 60%;
-  height: fit-content;
+  height: auto;
   max-width: 100%;
   margin-top: 6%;
   margin-bottom: 10px;
@@ -45,7 +45,7 @@
   }
   #modal-img {
     width: 94vw;
-    height: fit-content;
+    height: auto;
     margin-left: 3vw;
     margin-right: 3vw;
     margin-top: 10vh;
