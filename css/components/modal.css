@@ -48,9 +48,6 @@
     height: auto;
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 10vh;
+    margin-top: 30vh;
   }
-}
-
-@media (max-width: 768px) {
 }
