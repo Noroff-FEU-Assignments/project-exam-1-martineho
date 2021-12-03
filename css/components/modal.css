@@ -14,7 +14,6 @@
   cursor: pointer;
 }
 #modal-img {
-  background-color: white;
   border-radius: 20px;
   width: 60%;
   height: fit-content;
@@ -38,4 +37,16 @@
 }
 .close:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 850px) {
+  .modal-container {
+    height: 100vh;
+  }
+  #modal-img {
+    width: 100%;
+    height: fit-content;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
 }

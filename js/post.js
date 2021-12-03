@@ -48,13 +48,10 @@ async function fetchPost() {
                 
    
     const imageList = document.querySelectorAll(".img");
-    console.log(imageList);
-
-   
     const modalContent = document.querySelector(".modal-content")
     const imgCap = document.querySelector(".caption")
-   
 
+     // console.log(imageList);
 
     for (var i = 0; i < imageList.length; i++) {
 
@@ -64,6 +61,7 @@ async function fetchPost() {
       imageList[i].addEventListener("click", function() {
         displayModal();
     })
+
     function displayModal () {
       modal.style.display = "block";
       modalContent.src = modalImage;
@@ -74,7 +72,6 @@ async function fetchPost() {
         modal.style.display = "none";
       } 
   } 
-
 } 
 
 fetchPost();
