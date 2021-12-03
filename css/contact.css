@@ -138,7 +138,7 @@ button:hover {
     margin: 0 3vw;
   }
   #contactForm {
-    padding: 0 3vw;
+    padding: 0 0vw;
     width: 100%;
   }
 }
