@@ -45,12 +45,12 @@ a.nav-link {
   border-radius: 20px;
 }
 a.nav-link.active {
-  background-color: #fe4e5b30;
+  background-color: #fe4e5b20;
   color: #222222;
 }
 a.nav-link:hover {
   color: #222222;
-  background-color: #fe4e5b30;
+  background-color: #fe4e5b20;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: 0.2s ease;
