@@ -157,6 +157,24 @@ footer {
   }
 }
 
+@media (max-width: 850px) {
+  .container .item {
+    border-radius: 10px;
+    height: 300px;
+    width: 50vw;
+    margin: 0 1px 0px 0;
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .container .item img {
+    width: 50vw;
+    height: 230px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 768px) {
   main {
     padding: 0 3%;
