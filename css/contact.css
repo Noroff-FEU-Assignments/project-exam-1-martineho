@@ -139,6 +139,7 @@ button:hover {
   }
   #contactForm {
     padding: 0 3vw;
+    width: 100%;
   }
 }
 @media (max-width: 428px) {
