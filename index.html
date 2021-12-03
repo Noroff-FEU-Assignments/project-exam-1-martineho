@@ -52,12 +52,12 @@
       </div>
     </header>
 
-    <main>
-      <div class="herotop">
-        <h1>Find inspiration for your next destination.</h1>
+  <main>
+    <div class="herotop">
+      <h1>Find inspiration for your next destination.</h1>
         <p>Read traveller stories from around the world and get inspired.</p>
-        <a class="cta" href="blog.html">Read blogs</a>
-      </div>
+      <a class="cta" href="blog.html">Read blogs</a>
+    </div>
 
       <header class="latestPosts">
         <h2>Latest blogs</h2>
@@ -71,36 +71,28 @@
         </p>
       </header>
 
-      <section id="#container" class="container">
+      <section id="#post-slider" class="container">
         <div class="slider"></div>
       </section>
 
-      <section class="featured"></section>
-
       <section class="information">
         <div class="newsletter">
-          <form>
-            <label
-              ><h2>Wanna know when we post?</h2>
-              <p>Subscribe to our newsletter!</p></label
-            >
-            <div>
-              <input
-                class="newsletterInput"
-                type="email"
-                id="email"
-                placeholder="Enter Email"/>
-              <button type="submit">Send</button>
-            </div>
-            <div class="form-error" id="emailError">
-              Please enter a valid email address
-            </div>
-          </form>
+            <form id="newsletterForm">
+              <label>
+                <h2>Wanna know when we post?</h2>
+                <p>Subscribe to our newsletter!</p>
+              </label>
+                <div>
+                  <input class="newsletterInput" type="email" id="email" placeholder="Enter Email"/>
+                  <div class="form-error" id="emailError">Please enter a valid email address </div>
+                    <button type="submit">Send</button>
+              </div>
+            </form>
         </div>
       </section>
-    </main>
+  </main>
 
-    <footer>
+  <footer>
       <div class="footer-menu">
         <p>© 2021 Travelcoco</p>
         <a href="">Cookies</a>
@@ -111,9 +103,9 @@
       <a href="#" class="social-media">
         <img alt="instagram icon" src="images/instagram.png"/>
       </a>
+  </footer>
 
-    </footer>
-
+    
     <script src="js/navbar.js"></script>
     <script src="js/slider.js"></script>
   </body>

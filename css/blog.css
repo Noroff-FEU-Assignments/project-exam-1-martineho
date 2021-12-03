@@ -83,7 +83,7 @@ h3 {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   gap: 30px;
   row-gap: 10px;
@@ -93,14 +93,14 @@ h3 {
 .container .item {
   border-radius: 10px;
   height: 300px;
-  width: 20vw;
+  width: 290px;
   margin: 0 1px 0px 0;
   padding-bottom: 20px;
   text-decoration: none;
 }
 
 .container .item img {
-  width: 20vw;
+  width: 290px;
   height: 25vh;
   border-radius: 15px;
   object-fit: cover;
@@ -116,20 +116,20 @@ h3 {
   color: #222;
 }
 button.more-button {
-  color: #22222281;
+  color: #222222;
   font-weight: 400;
   font-size: 0.9rem;
   width: 120px;
   margin-left: 45vw;
-  background-color: transparent;
+  background-color: #fe4e5b;
   outline: none;
   border: none;
   padding: 8px 16px;
   border-radius: 20px;
 }
 button.more-button:hover {
-  background-color: #c5d9ff70;
-  color: #246ef8;
+  background-color: rgb(255, 109, 119);
+  color: #222222;
   padding: 8px 16px;
   transition: ease 0.5s;
 }
@@ -158,37 +158,66 @@ footer {
 }
 
 @media (max-width: 768px) {
+  main {
+    padding: 0 3%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   header.blog {
     margin-top: 5vh;
     margin-bottom: 3vh;
   }
   h1 {
     margin-bottom: 20px;
+    margin-left: 3vw;
     font-size: 2.2rem;
   }
-  .blog .categories {
-    margin: 1rem 0;
+  h3 {
+    display: none;
   }
-  .blog .categories a {
-    font-size: 0.9rem;
-    padding: 0px 10px;
-    font-weight: 300;
+  .categories {
+    width: 100vw;
+  }
+  .category-list {
+    display: flex;
+  }
+  .categories .category {
+    margin: 10px 5px;
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  .categories .category:hover,
+  .category:focus {
+    color: #c23e46;
+    margin: 10px 5px;
+    transition: 0.3s ease;
+  }
+  .categories .category:hover span {
+    display: none;
   }
   .container {
-    margin: 0px 5% 10px 5%;
+    margin-top: 3vh;
     padding-bottom: 5px;
     height: auto;
     align-items: center;
     row-gap: 5px;
+    width: 100vw;
   }
   .container .item {
-    height: 300px;
-    max-width: 90vw;
-    margin: auto auto;
+    display: block;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 10px;
   }
   .container .item img {
-    width: 90vw;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    padding-bottom: 0px;
   }
+
   button.more-button {
     margin-left: 5vw;
   }
