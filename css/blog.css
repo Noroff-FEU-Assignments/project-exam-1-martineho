@@ -43,7 +43,6 @@ h3 {
 }
 .categories {
   width: 12vw;
-  border-radius: 15px;
   float: left;
   height: fit-content;
 }
@@ -199,6 +198,9 @@ footer {
   }
   .categories {
     width: 100vw;
+    border: solid 1.5px #fe4e5b30;
+    margin: 0 -5vw;
+    padding: 0 5vw;
   }
   .category-list {
     display: flex;
@@ -208,15 +210,12 @@ footer {
     margin: 10px 5px;
     font-size: 1rem;
     padding: 6px 10px;
-    border: solid 1.5px #fe4e5b;
   }
   .categories .category:hover,
   .category:focus {
     color: #c23e46;
-    margin: 10px 5px;
-    transition: 0.3s ease;
   }
-  .categories .category:hover span {
+  .categories .category span {
     display: none;
   }
   .container {
