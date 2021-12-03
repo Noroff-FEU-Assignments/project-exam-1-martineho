@@ -26,7 +26,13 @@ header {
 }
 
 a.nav-logo {
-  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: Quicksand, sans-serif;
+  text-decoration: none;
+}
+.nav-logo img {
+  margin-right: 10px;
 }
 
 li.nav-item {
