@@ -317,6 +317,9 @@ footer a {
 }
 
 @media (max-width: 850px) {
+  header {
+    padding: 0 5%;
+  }
   .herotop {
     height: 50vh;
     margin: 0 3vw;
