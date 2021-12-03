@@ -328,6 +328,9 @@ footer a {
   .herotop p {
     font-size: 1.2rem;
   }
+  #post-slider {
+    padding: 0 5%;
+  }
   .latestPosts {
     padding-top: 5vh;
   }
