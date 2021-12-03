@@ -121,16 +121,16 @@ h3 {
   main header {
     height: auto;
     margin: 0 3vw;
-    padding: 5%;
+    padding: 10% 8%;
   }
   main section {
     margin: 5% 5%;
   }
   .team {
-    width: 50%;
+    width: 40%;
   }
   .contact {
-    width: 50%;
+    width: 40%;
   }
 }
 
