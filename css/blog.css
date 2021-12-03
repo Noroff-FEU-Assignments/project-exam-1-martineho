@@ -179,13 +179,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  main {
-    padding: 0 5%;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   header.blog {
     margin-top: 5vh;
     margin-bottom: 3vh;
@@ -241,7 +234,7 @@ footer {
   }
 
   button.more-button {
-    margin-left: 5vw;
+    margin-left: 15vw;
   }
   footer {
     padding-top: 10vh;
